@@ -7,7 +7,7 @@ import logging
 from typing import Dict, List, Optional
 from datetime import datetime
 
-from config import MAX_HISTORY_LENGTH
+from telegram_bot.config import MAX_HISTORY_LENGTH
 
 # Настройка логирования
 logger = logging.getLogger(__name__)

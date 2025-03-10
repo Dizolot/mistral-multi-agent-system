@@ -14,7 +14,7 @@ class MistralClient:
     Асинхронный клиент для взаимодействия с API Mistral
     """
     
-    def __init__(self, base_url: str, timeout: int = 120):
+    def __init__(self, base_url: str, timeout: int = 180):
         """
         Инициализация клиента Mistral API
         
@@ -47,39 +47,49 @@ class MistralClient:
                 'n_predict': max_tokens,
                 'temperature': temperature,
                 'top_p': 0.95,
-                'stop': ['</s>', '[INST]'],
+                'stop': ["</s>", "[INST]"],
                 'stream': False
             }
             
-            logger.info(f'Отправка запроса: {payload}')
+            logger.info(f'Отправка запроса на {self.base_url}/completion, длина промпта: {len(prompt)} символов')
+            logger.info(f'Payload: {json.dumps(payload)}')
             
             async with aiohttp.ClientSession() as session:
-                async with session.post(
-                    f'{self.base_url}/completion',
-                    json=payload,
-                    timeout=self.timeout
-                ) as response:
-                    if response.status != 200:
-                        error_text = await response.text()
-                        logger.error(f'Ошибка при отправке запроса: {response.status}, {error_text}')
-                        return 'Произошла ошибка при отправке запроса. Попробуйте еще раз.'
-                    
-                    result = await response.json()
-                    logger.info(f'Получен ответ: {result}')
-                    
-                    # Извлекаем текст ответа
-                    if 'content' in result:
-                        return result['content'].strip()
-                    else:
-                        logger.error(f'Неожиданный формат ответа: {result}')
-                        return 'Получен неожиданный формат ответа от модели.'
+                try:
+                    logger.info(f'Начало отправки запроса к {self.base_url}/completion')
+                    async with session.post(
+                        f'{self.base_url}/completion',
+                        json=payload,
+                        timeout=self.timeout
+                    ) as response:
+                        if response.status != 200:
+                            error_text = await response.text()
+                            logger.error(f'Ошибка при отправке запроса: {response.status}, {error_text}')
+                            return f'Произошла ошибка при отправке запроса (код {response.status}). Попробуйте еще раз.'
                         
+                        result = await response.json()
+                        logger.info(f'Получен ответ: {json.dumps(result)}')
+                        
+                        # Извлекаем текст ответа
+                        if 'content' in result:
+                            content = result['content'].strip()
+                            logger.info(f'Получен ответ длиной {len(content)} символов')
+                            return content
+                        else:
+                            logger.error(f'Неожиданный формат ответа: {result}')
+                            return 'Получен неожиданный формат ответа от модели.'
+                except aiohttp.ClientError as e:
+                    logger.error(f'Ошибка клиента aiohttp: {str(e)}')
+                    return f'Произошла ошибка при подключении к серверу: {str(e)}'
+                    
         except asyncio.TimeoutError:
             logger.error(f'Таймаут запроса после {self.timeout} секунд')
             return 'Запрос занял слишком много времени. Пожалуйста, попробуйте еще раз или упростите запрос.'
             
         except Exception as e:
             logger.error(f'Ошибка при генерации ответа: {str(e)}')
+            import traceback
+            logger.error(f'Трассировка: {traceback.format_exc()}')
             return f'Произошла ошибка: {str(e)}'
     
     async def generate_chat_response(self, 
@@ -103,7 +113,7 @@ class MistralClient:
     
     def _convert_messages_to_prompt(self, messages: List[Dict[str, str]]) -> str:
         """
-        Преобразование истории сообщений в единый промпт
+        Преобразование истории сообщений в единый промпт для llama.cpp
         
         Args:
             messages: Список сообщений в формате [{"role": "user", "content": "..."}, ...]
@@ -111,11 +121,32 @@ class MistralClient:
         Returns:
             Промпт для модели
         """
-        # Собираем только сообщения пользователя, так как мы используем llama.cpp напрямую
-        user_messages = [msg["content"] for msg in messages if msg["role"] == "user"]
+        if not messages:
+            return "Привет! Чем я могу помочь?"
+            
+        # Извлекаем системный промпт, если он есть
+        system_prompt = ""
+        user_messages = []
+        assistant_messages = []
         
-        # Берем последнее сообщение пользователя
+        for msg in messages:
+            if msg["role"] == "system":
+                system_prompt = msg["content"]
+            elif msg["role"] == "user":
+                user_messages.append(msg["content"])
+            elif msg["role"] == "assistant":
+                assistant_messages.append(msg["content"])
+        
+        # Строим промпт для Mistral в формате llama.cpp
+        formatted_prompt = ""
+        
+        # Добавляем системный промпт в начало, если он есть
+        if system_prompt:
+            formatted_prompt = f"{system_prompt}\n\n"
+            
+        # Добавляем последнее сообщение пользователя
         if user_messages:
-            return user_messages[-1]
-        
-        return "Привет! Чем я могу помочь?" 
+            formatted_prompt += user_messages[-1]
+            
+        logger.info(f"Сформирован промпт длиной {len(formatted_prompt)} символов")
+        return formatted_prompt 
