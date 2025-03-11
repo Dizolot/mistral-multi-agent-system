@@ -1,0 +1,198 @@
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-10 21:21:38 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-10 23:52:09 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-10 23:53:32 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-10 23:54:29 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-10 23:56:41 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-10 23:58:22 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-10 23:59:03 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 00:00:11 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 00:01:30 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 00:04:43 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 00:05:18 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 00:05:35 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 00:32:29 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 00:58:22 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 01:05:46 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 01:07:47 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 01:24:01 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 01:28:59 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 01:34:05 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 01:53:44 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 02:33:20 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы

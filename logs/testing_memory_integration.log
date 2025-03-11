@@ -1,0 +1,21 @@
+2025-03-11 12:10:14 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:10:14 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:10:14 | INFO | multi_agent_system.agent_developer.testing_memory_integration:create_test_dataset_from_memory:179 | Создан тестовый набор данных test_dataset_123 с 2 тестовыми случаями
+2025-03-11 12:10:14 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:10:14 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:30:58 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:30:58 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:30:58 | INFO | multi_agent_system.agent_developer.testing_memory_integration:create_test_dataset_from_memory:179 | Создан тестовый набор данных test_dataset_123 с 2 тестовыми случаями
+2025-03-11 12:30:58 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:30:58 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:53:28 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:53:28 | INFO | multi_agent_system.agent_developer.testing_memory_integration:create_test_dataset_from_memory:179 | Создан тестовый набор данных test_dataset_123 с 2 тестовыми случаями
+2025-03-11 12:53:28 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:53:28 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:53:28 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:55:53 | INFO | multi_agent_system.agent_developer.testing_memory_integration:create_auto_improvement_cycle:371 | Цикл автоматического улучшения завершен. Улучшено 2 из 3 агентов
+2025-03-11 12:55:53 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:55:53 | INFO | multi_agent_system.agent_developer.testing_memory_integration:create_test_dataset_from_memory:179 | Создан тестовый набор данных test_dataset_123 с 2 тестовыми случаями
+2025-03-11 12:55:53 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:55:53 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована
+2025-03-11 12:55:53 | INFO | multi_agent_system.agent_developer.testing_memory_integration:__init__:68 | Интеграция тестирования и памяти инициализирована

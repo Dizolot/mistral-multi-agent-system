@@ -1,0 +1,245 @@
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:21:08 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:21:09 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:21:09 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:21:09 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:21:09 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:22:45 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:22:45 | ERROR | multi_agent_system.orchestrator.langchain_router:route_request:271 | Ошибка при маршрутизации запроса: Тестовая ошибка
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:22:45 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:22:45 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:22:45 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:22:45 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:22:45 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:22:45 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:22:45 | ERROR | multi_agent_system.orchestrator.langchain_router:setup_langgraph:439 | Ошибка при настройке LangGraph: name 'Node' is not defined
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:15 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:15 | ERROR | multi_agent_system.orchestrator.langchain_router:route_request:271 | Ошибка при маршрутизации запроса: Тестовая ошибка
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:15 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:15 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:15 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:15 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:15 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:15 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:54 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:54 | ERROR | multi_agent_system.orchestrator.langchain_router:route_request:271 | Ошибка при маршрутизации запроса: Тестовая ошибка
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:54 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:54 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:54 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:54 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:54 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:24:54 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:25:39 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:25:39 | ERROR | multi_agent_system.orchestrator.langchain_router:route_request:271 | Ошибка при маршрутизации запроса: Тестовая ошибка
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:25:39 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:25:39 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:25:39 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:25:39 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:25:39 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:14 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:14 | ERROR | multi_agent_system.orchestrator.langchain_router:route_request:271 | Ошибка при маршрутизации запроса: Тестовая ошибка
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:14 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:14 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:14 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:14 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:14 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:14 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:46 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:46 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:46 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:46 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:46 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:46 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:46 | ERROR | multi_agent_system.orchestrator.langchain_router:route_request:271 | Ошибка при маршрутизации запроса: Тестовая ошибка
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:47 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:47 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:47 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:47 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:47 | WARNING | multi_agent_system.orchestrator.langchain_router:route_request:213 | Прямой вызов Mistral API не реализован, выбран первый агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:route_request:215 | Запрос маршрутизирован к агенту: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:70 | Используется Mistral API по адресу: http://localhost:8080/completion
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: general_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:_register_agents_from_config:114 | Зарегистрирован агент: programming_agent
+2025-03-11 05:26:47 | INFO | multi_agent_system.orchestrator.langchain_router:__init__:79 | LangChainRouter инициализирован с менеджером памяти

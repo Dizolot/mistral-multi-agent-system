@@ -1,0 +1,1394 @@
+INFO:     Will watch for changes in these directories: ['/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system']
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [7570] using StatReload
+Запуск мок-сервера Mistral API...
+INFO:     Started server process [7575]
+INFO:     Waiting for application startup.
+2025-03-10 18:32:48 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50846 - "HEAD /health HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:50860 - "HEAD /health HTTP/1.1" 405 Method Not Allowed
+INFO:     127.0.0.1:51039 - "HEAD /health HTTP/1.1" 405 Method Not Allowed
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 18:37:17 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7575]
+INFO:     Started server process [8917]
+INFO:     Waiting for application startup.
+2025-03-10 18:37:17 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/telegram_bot_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 18:37:44 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8917]
+INFO:     Started server process [8947]
+INFO:     Waiting for application startup.
+2025-03-10 18:37:44 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/message_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 18:38:06 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8947]
+INFO:     Started server process [8966]
+INFO:     Waiting for application startup.
+2025-03-10 18:38:07 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/orchestrator_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 18:38:42 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8966]
+INFO:     Started server process [8970]
+INFO:     Waiting for application startup.
+2025-03-10 18:38:43 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52158 - "HEAD /health HTTP/1.1" 405 Method Not Allowed
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:18:39 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [8970]
+INFO:     Started server process [11792]
+INFO:     Waiting for application startup.
+2025-03-10 19:18:40 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:18:56 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11792]
+INFO:     Started server process [11802]
+INFO:     Waiting for application startup.
+2025-03-10 19:18:57 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:19:18 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11802]
+INFO:     Started server process [11804]
+INFO:     Waiting for application startup.
+2025-03-10 19:19:18 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/integration.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:26:05 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11804]
+INFO:     Started server process [12594]
+INFO:     Waiting for application startup.
+2025-03-10 19:26:06 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/telegram_bot_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:27:05 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12594]
+INFO:     Started server process [12636]
+INFO:     Waiting for application startup.
+2025-03-10 19:27:06 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/integration.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:27:34 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12636]
+INFO:     Started server process [12654]
+INFO:     Waiting for application startup.
+2025-03-10 19:27:35 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/message_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:27:58 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12654]
+INFO:     Started server process [12681]
+INFO:     Waiting for application startup.
+2025-03-10 19:27:59 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/integration.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:37:41 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12681]
+INFO:     Started server process [14055]
+INFO:     Waiting for application startup.
+2025-03-10 19:37:42 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:41:50 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14055]
+INFO:     Started server process [14414]
+INFO:     Waiting for application startup.
+2025-03-10 19:41:51 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/integrations/telegram/orchestrator_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:42:49 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14414]
+INFO:     Started server process [14438]
+INFO:     Waiting for application startup.
+2025-03-10 19:42:50 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:55:29 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [14438]
+INFO:     Started server process [15895]
+INFO:     Waiting for application startup.
+2025-03-10 19:55:31 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'run_api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:56:21 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15895]
+INFO:     Started server process [16191]
+INFO:     Waiting for application startup.
+2025-03-10 19:56:22 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 19:56:34 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16191]
+INFO:     Started server process [16228]
+INFO:     Waiting for application startup.
+2025-03-10 19:56:35 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:08:48 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16228]
+INFO:     Started server process [21102]
+INFO:     Waiting for application startup.
+2025-03-10 20:08:49 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:09:38 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21102]
+INFO:     Started server process [21144]
+INFO:     Waiting for application startup.
+2025-03-10 20:09:39 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/config.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:10:03 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21144]
+INFO:     Started server process [21171]
+INFO:     Waiting for application startup.
+2025-03-10 20:10:04 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'run_telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:10:32 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21171]
+INFO:     Started server process [21226]
+INFO:     Waiting for application startup.
+2025-03-10 20:10:33 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:13:43 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21226]
+INFO:     Started server process [21440]
+INFO:     Waiting for application startup.
+2025-03-10 20:13:44 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/config.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:14:26 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21440]
+INFO:     Started server process [21516]
+INFO:     Waiting for application startup.
+2025-03-10 20:14:27 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/conversation_manager.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:14:45 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21516]
+INFO:     Started server process [21532]
+INFO:     Waiting for application startup.
+2025-03-10 20:14:46 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:15:16 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21532]
+INFO:     Started server process [21603]
+INFO:     Waiting for application startup.
+2025-03-10 20:15:17 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:15:51 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21603]
+INFO:     Started server process [21646]
+INFO:     Waiting for application startup.
+2025-03-10 20:15:52 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:16:27 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21646]
+INFO:     Started server process [21686]
+INFO:     Waiting for application startup.
+2025-03-10 20:16:28 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:16:48 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21686]
+INFO:     Started server process [21698]
+INFO:     Waiting for application startup.
+2025-03-10 20:16:49 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/config.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:22:02 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [21698]
+INFO:     Started server process [22148]
+INFO:     Waiting for application startup.
+2025-03-10 20:22:03 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:34:30 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22148]
+INFO:     Started server process [23197]
+INFO:     Waiting for application startup.
+2025-03-10 20:34:30 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/logger.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:35:05 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23197]
+INFO:     Started server process [23233]
+INFO:     Waiting for application startup.
+2025-03-10 20:35:06 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:35:23 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23233]
+INFO:     Started server process [23236]
+INFO:     Waiting for application startup.
+2025-03-10 20:35:24 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/agent_manager.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:36:02 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23236]
+INFO:     Started server process [23258]
+INFO:     Waiting for application startup.
+2025-03-10 20:36:03 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:37:16 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23258]
+INFO:     Started server process [23282]
+INFO:     Waiting for application startup.
+2025-03-10 20:37:17 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 20:37:31 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23282]
+INFO:     Started server process [23289]
+INFO:     Waiting for application startup.
+2025-03-10 20:37:32 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 21:05:44 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23289]
+INFO:     Started server process [23639]
+INFO:     Waiting for application startup.
+2025-03-10 21:05:46 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 21:20:34 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23639]
+INFO:     Started server process [23843]
+INFO:     Waiting for application startup.
+2025-03-10 21:20:35 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 21:20:54 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23843]
+INFO:     Started server process [23858]
+INFO:     Waiting for application startup.
+2025-03-10 21:20:54 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 21:21:22 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23858]
+INFO:     Started server process [23878]
+INFO:     Waiting for application startup.
+2025-03-10 21:21:22 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 21:49:21 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23878]
+INFO:     Started server process [24814]
+INFO:     Waiting for application startup.
+2025-03-10 21:49:22 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:51:21 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [24814]
+INFO:     Started server process [25489]
+INFO:     Waiting for application startup.
+2025-03-10 23:51:22 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:51:39 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25489]
+INFO:     Started server process [25513]
+INFO:     Waiting for application startup.
+2025-03-10 23:51:39 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:51:58 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25513]
+INFO:     Started server process [25524]
+INFO:     Waiting for application startup.
+2025-03-10 23:51:59 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:53:24 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [25524]
+INFO:     Started server process [26059]
+INFO:     Waiting for application startup.
+2025-03-10 23:53:24 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:56:04 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26059]
+INFO:     Started server process [27203]
+INFO:     Waiting for application startup.
+2025-03-10 23:56:05 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:56:19 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27203]
+INFO:     Started server process [27221]
+INFO:     Waiting for application startup.
+2025-03-10 23:56:19 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:56:33 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27221]
+INFO:     Started server process [27243]
+INFO:     Waiting for application startup.
+2025-03-10 23:56:33 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:57:45 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27243]
+INFO:     Started server process [27900]
+INFO:     Waiting for application startup.
+2025-03-10 23:57:46 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 23:58:07 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27900]
+INFO:     Started server process [27933]
+INFO:     Waiting for application startup.
+2025-03-10 23:58:07 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:00:04 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27933]
+INFO:     Started server process [29008]
+INFO:     Waiting for application startup.
+2025-03-11 00:00:05 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:00:32 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29008]
+INFO:     Started server process [29599]
+INFO:     Waiting for application startup.
+2025-03-11 00:00:33 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:00:54 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29599]
+INFO:     Started server process [29643]
+INFO:     Waiting for application startup.
+2025-03-11 00:00:55 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:01:11 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29643]
+INFO:     Started server process [29665]
+INFO:     Waiting for application startup.
+2025-03-11 00:01:11 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:03:05 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29665]
+INFO:     Started server process [30131]
+INFO:     Waiting for application startup.
+2025-03-11 00:03:06 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:03:20 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30131]
+INFO:     Started server process [30146]
+INFO:     Waiting for application startup.
+2025-03-11 00:03:21 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:03:43 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30146]
+INFO:     Started server process [30185]
+INFO:     Waiting for application startup.
+2025-03-11 00:03:44 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:03:47 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30185]
+INFO:     Started server process [30192]
+INFO:     Waiting for application startup.
+2025-03-11 00:03:48 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/config.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:04:00 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30192]
+INFO:     Started server process [30201]
+INFO:     Waiting for application startup.
+2025-03-11 00:04:00 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:04:09 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30201]
+INFO:     Started server process [30214]
+INFO:     Waiting for application startup.
+2025-03-11 00:04:10 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:04:32 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30214]
+INFO:     Started server process [30243]
+INFO:     Waiting for application startup.
+2025-03-11 00:04:33 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:04:39 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30243]
+INFO:     Started server process [30266]
+INFO:     Waiting for application startup.
+2025-03-11 00:04:40 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'run_telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:05:05 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30266]
+INFO:     Started server process [30721]
+INFO:     Waiting for application startup.
+2025-03-11 00:05:07 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 00:56:40 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30721]
+INFO:     Started server process [32789]
+INFO:     Waiting for application startup.
+2025-03-11 00:56:41 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:06:59 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [32789]
+INFO:     Started server process [33969]
+INFO:     Waiting for application startup.
+2025-03-11 01:07:01 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:07:14 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33969]
+INFO:     Started server process [33971]
+INFO:     Waiting for application startup.
+2025-03-11 01:07:16 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:07:36 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33971]
+INFO:     Started server process [33974]
+INFO:     Waiting for application startup.
+2025-03-11 01:07:36 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:23:53 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33974]
+INFO:     Started server process [36805]
+INFO:     Waiting for application startup.
+2025-03-11 01:23:53 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:32:29 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [36805]
+INFO:     Started server process [38424]
+INFO:     Waiting for application startup.
+2025-03-11 01:32:29 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:33:03 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [38424]
+INFO:     Started server process [38448]
+INFO:     Waiting for application startup.
+2025-03-11 01:33:03 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/telegram_bot.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:33:26 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [38448]
+INFO:     Started server process [38467]
+INFO:     Waiting for application startup.
+2025-03-11 01:33:26 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/config.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:33:48 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [38467]
+INFO:     Started server process [38481]
+INFO:     Waiting for application startup.
+2025-03-11 01:33:49 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/mistral_client.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 01:53:28 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [38481]
+INFO:     Started server process [39685]
+INFO:     Waiting for application startup.
+2025-03-11 01:53:28 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:32:36 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [39685]
+INFO:     Started server process [40220]
+INFO:     Waiting for application startup.
+2025-03-11 02:32:36 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:33:01 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [40220]
+INFO:     Started server process [40248]
+INFO:     Waiting for application startup.
+2025-03-11 02:33:02 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:33:57 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [40248]
+INFO:     Started server process [40333]
+INFO:     Waiting for application startup.
+2025-03-11 02:33:57 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'telegram_bot/orchestrator_adapter.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:34:24 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [40333]
+INFO:     Started server process [40354]
+INFO:     Waiting for application startup.
+2025-03-11 02:34:25 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:52:11 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [40354]
+INFO:     Started server process [41110]
+INFO:     Waiting for application startup.
+2025-03-11 02:52:11 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:52:30 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [41110]
+INFO:     Started server process [41115]
+INFO:     Waiting for application startup.
+2025-03-11 02:52:30 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:52:54 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [41115]
+INFO:     Started server process [41158]
+INFO:     Waiting for application startup.
+2025-03-11 02:52:55 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:53:27 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [41158]
+INFO:     Started server process [41198]
+INFO:     Waiting for application startup.
+2025-03-11 02:53:28 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 02:54:19 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [41198]
+INFO:     Started server process [41255]
+INFO:     Waiting for application startup.
+2025-03-11 02:54:20 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'venv/lib/python3.11/site-packages/pydantic_core/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:29:53 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [41255]
+INFO:     Started server process [42622]
+INFO:     Waiting for application startup.
+2025-03-11 03:29:53 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'venv/lib/python3.11/site-packages/pydantic/functional_validators.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:29:55 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [42622]
+INFO:     Started server process [42629]
+INFO:     Waiting for application startup.
+2025-03-11 03:29:55 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/orchestrator/langchain_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:32:26 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [42629]
+INFO:     Started server process [43197]
+INFO:     Waiting for application startup.
+2025-03-11 03:32:27 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/base_agent.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:33:08 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43197]
+INFO:     Started server process [43340]
+INFO:     Waiting for application startup.
+2025-03-11 03:33:08 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/general_agent.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:33:35 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43340]
+INFO:     Started server process [43375]
+INFO:     Waiting for application startup.
+2025-03-11 03:33:36 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/programming_agent.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:34:02 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43375]
+INFO:     Started server process [43412]
+INFO:     Waiting for application startup.
+2025-03-11 03:34:03 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:35:27 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43412]
+INFO:     Started server process [43583]
+INFO:     Waiting for application startup.
+2025-03-11 03:35:28 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_analytics/data_collector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:37:02 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43583]
+INFO:     Started server process [43717]
+INFO:     Waiting for application startup.
+2025-03-11 03:37:02 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:47:11 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [43717]
+INFO:     Started server process [44541]
+INFO:     Waiting for application startup.
+2025-03-11 03:47:11 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_analytics/performance_analyzer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:48:54 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [44541]
+INFO:     Started server process [44584]
+INFO:     Waiting for application startup.
+2025-03-11 03:48:55 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_analytics/metrics_evaluator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:49:51 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [44584]
+INFO:     Started server process [44614]
+INFO:     Waiting for application startup.
+2025-03-11 03:49:51 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_analytics/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:50:05 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [44614]
+INFO:     Started server process [44621]
+INFO:     Waiting for application startup.
+2025-03-11 03:50:06 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_data_collector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 03:59:47 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [44621]
+INFO:     Started server process [44908]
+INFO:     Waiting for application startup.
+2025-03-11 03:59:48 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_performance_analyzer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:00:36 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [44908]
+INFO:     Started server process [45029]
+INFO:     Waiting for application startup.
+2025-03-11 04:00:36 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_metrics_evaluator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:01:19 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45029]
+INFO:     Started server process [45048]
+INFO:     Waiting for application startup.
+2025-03-11 04:01:20 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:01:33 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45048]
+INFO:     Started server process [45057]
+INFO:     Waiting for application startup.
+2025-03-11 04:01:34 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:01:43 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45057]
+INFO:     Started server process [45062]
+INFO:     Waiting for application startup.
+2025-03-11 04:01:44 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_data_collector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:06:33 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45062]
+INFO:     Started server process [45183]
+INFO:     Waiting for application startup.
+2025-03-11 04:06:34 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_performance_analyzer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:07:03 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45183]
+INFO:     Started server process [45192]
+INFO:     Waiting for application startup.
+2025-03-11 04:07:04 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_performance_analyzer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:07:29 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45192]
+INFO:     Started server process [45200]
+INFO:     Waiting for application startup.
+2025-03-11 04:07:30 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_data_collector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:08:30 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45200]
+INFO:     Started server process [45250]
+INFO:     Waiting for application startup.
+2025-03-11 04:08:30 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_performance_analyzer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:08:55 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45250]
+INFO:     Started server process [45259]
+INFO:     Waiting for application startup.
+2025-03-11 04:08:56 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_data_collector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:10:39 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45259]
+INFO:     Started server process [45304]
+INFO:     Waiting for application startup.
+2025-03-11 04:10:40 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_data_collector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:11:01 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45304]
+INFO:     Started server process [45337]
+INFO:     Waiting for application startup.
+2025-03-11 04:11:02 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_data_collector.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:11:25 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45337]
+INFO:     Started server process [45360]
+INFO:     Waiting for application startup.
+2025-03-11 04:11:26 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_performance_analyzer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:12:35 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45360]
+INFO:     Started server process [45414]
+INFO:     Waiting for application startup.
+2025-03-11 04:12:36 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/agent_analytics/test_metrics_evaluator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:13:59 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45414]
+INFO:     Started server process [45468]
+INFO:     Waiting for application startup.
+2025-03-11 04:14:00 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/orchestrator/langchain_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:19:03 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45468]
+INFO:     Started server process [45626]
+INFO:     Waiting for application startup.
+2025-03-11 04:19:04 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:19:27 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45626]
+INFO:     Started server process [45634]
+INFO:     Waiting for application startup.
+2025-03-11 04:19:28 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:19:51 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45634]
+INFO:     Started server process [45672]
+INFO:     Waiting for application startup.
+2025-03-11 04:19:51 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_developer/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:20:30 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45672]
+INFO:     Started server process [45708]
+INFO:     Waiting for application startup.
+2025-03-11 04:20:31 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_developer/agent_optimizer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:21:27 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45708]
+INFO:     Started server process [45726]
+INFO:     Waiting for application startup.
+2025-03-11 04:21:28 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_developer/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:21:52 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45726]
+INFO:     Started server process [45748]
+INFO:     Waiting for application startup.
+2025-03-11 04:21:52 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/api_server.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:36:38 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45748]
+INFO:     Started server process [45911]
+INFO:     Waiting for application startup.
+2025-03-11 04:36:39 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_developer/agent_tester.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:46:34 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [45911]
+INFO:     Started server process [46202]
+INFO:     Waiting for application startup.
+2025-03-11 04:46:35 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_developer/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:46:58 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46202]
+INFO:     Started server process [46232]
+INFO:     Waiting for application startup.
+2025-03-11 04:46:58 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/agent_configs.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:49:13 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46232]
+INFO:     Started server process [46302]
+INFO:     Waiting for application startup.
+2025-03-11 04:49:13 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:49:39 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46302]
+INFO:     Started server process [46336]
+INFO:     Waiting for application startup.
+2025-03-11 04:49:40 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/base_agent.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:50:40 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46336]
+INFO:     Started server process [46355]
+INFO:     Waiting for application startup.
+2025-03-11 04:50:41 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agents/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:50:58 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46355]
+INFO:     Started server process [46370]
+INFO:     Waiting for application startup.
+2025-03-11 04:50:58 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_developer/version_manager.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:55:41 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46370]
+INFO:     Started server process [46489]
+INFO:     Waiting for application startup.
+2025-03-11 04:55:41 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/agent_developer/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:56:05 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46489]
+INFO:     Started server process [46510]
+INFO:     Waiting for application startup.
+2025-03-11 04:56:05 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/memory/conversation_memory.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:58:21 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46510]
+INFO:     Started server process [46556]
+INFO:     Waiting for application startup.
+2025-03-11 04:58:22 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/memory/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 04:58:48 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46556]
+INFO:     Started server process [46574]
+INFO:     Waiting for application startup.
+2025-03-11 04:58:49 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/orchestrator/langchain_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:00:52 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46574]
+INFO:     Started server process [46651]
+INFO:     Waiting for application startup.
+2025-03-11 05:00:53 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/orchestrator/langchain_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:06:00 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46651]
+INFO:     Started server process [46844]
+INFO:     Waiting for application startup.
+2025-03-11 05:06:00 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/test_langchain_memory_integration.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:06:51 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46844]
+INFO:     Started server process [46872]
+INFO:     Waiting for application startup.
+2025-03-11 05:06:51 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/orchestrator/langchain_router.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:07:28 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46872]
+INFO:     Started server process [46888]
+INFO:     Waiting for application startup.
+2025-03-11 05:07:28 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'scripts/run_memory_integration_tests.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:07:44 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46888]
+INFO:     Started server process [46906]
+INFO:     Waiting for application startup.
+2025-03-11 05:07:45 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/memory/conversation_memory.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:09:24 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46906]
+INFO:     Started server process [47245]
+INFO:     Waiting for application startup.
+2025-03-11 05:09:24 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/memory/conversation_memory.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:21:32 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47245]
+INFO:     Started server process [47721]
+INFO:     Waiting for application startup.
+2025-03-11 05:21:33 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/test_langchain_memory_integration.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:21:50 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47721]
+INFO:     Started server process [47793]
+INFO:     Waiting for application startup.
+2025-03-11 05:21:51 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/memory/conversation_memory.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:22:12 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47793]
+INFO:     Started server process [47819]
+INFO:     Waiting for application startup.
+2025-03-11 05:22:13 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/memory/conversation_memory.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:22:36 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47819]
+INFO:     Started server process [47839]
+INFO:     Waiting for application startup.
+2025-03-11 05:22:37 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/memory/conversation_memory.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:23:11 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47839]
+INFO:     Started server process [47868]
+INFO:     Waiting for application startup.
+2025-03-11 05:23:11 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'multi_agent_system/memory/conversation_memory.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:23:35 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47868]
+INFO:     Started server process [47878]
+INFO:     Waiting for application startup.
+2025-03-11 05:23:35 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/test_langchain_memory_integration.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-11 05:24:06 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47878]
+INFO:     Started server process [47886]
+INFO:     Waiting for application startup.
+2025-03-11 05:24:07 | INFO | Мок-сервер Mistral API запущен
+INFO:     Application startup complete.
+2025-03-11 05:24:15 | ERROR | Ошибка при запуске мок-сервера Mistral API: [Errno 2] No such file or directory: '/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/test_memory_storage_a9a59b5ffe874b7fba0ba4ab2e3f4474'
+2025-03-11 05:24:15.942 | ERROR    | multi_agent_system.mistral_api_mock:run_server:129 - Ошибка при запуске мок-сервера Mistral API: [Errno 2] No such file or directory: '/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/test_memory_storage_a9a59b5ffe874b7fba0ba4ab2e3f4474'

@@ -1,0 +1,15 @@
+INFO:     Will watch for changes in these directories: ['/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [7556] using StatReload
+Запуск API-сервера оркестратора...
+INFO:     Started server process [7563]
+INFO:     Waiting for application startup.
+2025-03-10 18:32:47 | WARNING | Найден дубликат процесса с PID 7556, завершаем его
+2025-03-10 18:32:47 | INFO | API-сервер оркестратора запущен
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-10 18:32:47 | INFO | API-сервер оркестратора остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7563]
+INFO:     Stopping reloader process [7556]

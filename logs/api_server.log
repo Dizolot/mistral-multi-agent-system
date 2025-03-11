@@ -1,0 +1,22 @@
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:__init__:81 | Инициализирован менеджер агентов
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Основной ассистент (ID: default)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Python-ассистент (ID: python)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:__init__:43 | Инициализирован агент: Математический ассистент (ID: math)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:register_agent:95 | Установлен агент по умолчанию: Основной ассистент (ID: default)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Основной ассистент (ID: default)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Python-ассистент (ID: python)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:register_agent:97 | Зарегистрирован агент: Математический ассистент (ID: math)
+2025-03-11 02:34:33 | INFO | multi_agent_system.agents.agent_manager:initialize_default_agents:203 | Стандартные агенты инициализированы и зарегистрированы
+INFO:     Started server process [40384]
+INFO:     Waiting for application startup.
+Запуск API-сервера оркестратора...
+2025-03-11 02:34:33 | INFO | multi_agent_system.api_server:startup_event:93 | API-сервер оркестратора запущен
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8002 (Press CTRL+C to quit)
+2025-03-11 02:36:15 | INFO | multi_agent_system.api_server:process_telegram_message:204 | Получено сообщение от телеграм-бота, пользователь 173818694: Что ты умеешь?...
+2025-03-11 02:36:16 | INFO | multi_agent_system.api_server:process_telegram_message:236 | Запрос пользователя 173818694 направлен агенту: default
+2025-03-11 02:36:16 | INFO | multi_agent_system.api_server:process_telegram_message:247 | Подготовлены сообщения для модели: 2 сообщений
+2025-03-11 02:36:16 | INFO | multi_agent_system.api_server:process_telegram_message:250 | Отправка запроса к Mistral для пользователя 173818694
+2025-03-11 02:37:24 | INFO | multi_agent_system.api_server:process_telegram_message:282 | Успешно обработано сообщение от пользователя 173818694 агентом default
+INFO:     127.0.0.1:52235 - "POST /process HTTP/1.1" 200 OK
+em.api_server:process_telegram_message:282 | Успешно обработано сообщение от пользователя 173818694 агентом default

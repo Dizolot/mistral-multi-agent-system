@@ -1,0 +1,10 @@
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:__init__:46 | Интеграция памяти и аналитики инициализирована
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:process_conversation_history:146 | Обработано 0 взаимодействий из истории диалога пользователя user1
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:process_conversation_history:146 | Обработано 0 взаимодействий из истории диалога пользователя user2
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:process_all_users:175 | Обработано всего 0 взаимодействий для 2 пользователей
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:__init__:46 | Интеграция памяти и аналитики инициализирована
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:__init__:46 | Интеграция памяти и аналитики инициализирована
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:__init__:46 | Интеграция памяти и аналитики инициализирована
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:process_all_users:175 | Обработано всего 5 взаимодействий для 2 пользователей
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:__init__:46 | Интеграция памяти и аналитики инициализирована
+2025-03-11 12:55:57 | INFO | multi_agent_system.memory.memory_analytics_integration:process_conversation_history:146 | Обработано 2 взаимодействий из истории диалога пользователя test_user

@@ -25,6 +25,11 @@ from multi_agent_system.logger import get_logger
 from telegram_bot.mistral_client import MistralClient
 from telegram_bot.conversation_manager import ConversationManager
 
+# Импорт маршрутизатора LangChain и агентов
+from multi_agent_system.orchestrator.langchain_router import LangChainRouter
+from multi_agent_system.agents.general_agent import GeneralAgent
+from multi_agent_system.agents.programming_agent import ProgrammingAgent
+
 # Импорт менеджера агентов
 from multi_agent_system.agents.agent_manager import agent_manager
 
@@ -38,6 +43,26 @@ os.makedirs("logs", exist_ok=True)
 MISTRAL_API_URL = os.environ.get("MISTRAL_API_URL", "http://139.59.241.176:8080")
 mistral_client = MistralClient(base_url=MISTRAL_API_URL)
 conversation_manager = ConversationManager()
+
+# Инициализация маршрутизатора LangChain и агентов
+router = LangChainRouter(mistral_api_url=MISTRAL_API_URL)
+
+# Инициализация агентов
+general_agent = GeneralAgent(mistral_api_url=MISTRAL_API_URL)
+programming_agent = ProgrammingAgent(mistral_api_url=MISTRAL_API_URL)
+
+# Регистрация агентов в маршрутизаторе
+router.register_agent(
+    name=general_agent.name,
+    description=general_agent.description,
+    handler=general_agent.process
+)
+
+router.register_agent(
+    name=programming_agent.name,
+    description=programming_agent.description,
+    handler=programming_agent.process
+)
 
 # Проверка, исполняется ли уже этот сервис
 def check_and_kill_duplicate():
@@ -91,6 +116,7 @@ async def startup_event():
     # Проверяем наличие дубликатов, но не завершаем работу
     check_and_kill_duplicate()
     logger.info("API-сервер оркестратора запущен")
+    logger.info(f"LangChain маршрутизатор: {len(router.available_agents)} агентов зарегистрировано")
 
 @app.on_event("shutdown")
 async def shutdown_event():
@@ -104,14 +130,12 @@ async def health_check():
 
 @app.get("/agents")
 async def list_agents():
-    """Возвращает список доступных агентов"""
+    """Возвращает список доступных агентов из маршрутизатора LangChain"""
     result = []
-    for agent_id, agent in agent_manager.agents.items():
+    for agent_name, agent_details in router.available_agents.items():
         result.append({
-            "id": agent_id,
-            "name": agent.name,
-            "description": agent.description,
-            "is_default": agent_id == agent_manager.default_agent_id
+            "name": agent_name,
+            "description": agent_details.get("description", ""),
         })
     return result
 
@@ -196,7 +220,7 @@ async def process_message(message: Dict[str, Any]):
 
 @app.post("/process")
 async def process_telegram_message(message: Dict[str, Any]):
-    """Обрабатывает сообщение от телеграм-бота"""
+    """Обрабатывает сообщение от телеграм-бота через систему маршрутизации LangChain"""
     user_id = message.get("user_id", "unknown")
     session_id = message.get("session_id", "default")
     text = message.get("text", "")
@@ -231,205 +255,237 @@ async def process_telegram_message(message: Dict[str, Any]):
         # Добавляем сообщение пользователя в историю
         conversation_manager.add_user_message(user_id, text)
         
-        # Определяем агента для обработки запроса
-        agent_id = agent_manager.route_to_agent(text)
-        logger.info(f"Запрос пользователя {user_id} направлен агенту: {agent_id}")
+        # Получаем историю сообщений пользователя
+        chat_history = get_chat_history_for_langchain(user_id)
         
-        # Получаем агента
-        agent = agent_manager.get_agent(agent_id)
-        if agent is None:
-            agent = agent_manager.get_default_agent()
-            agent_id = agent.agent_id
-            logger.warning(f"Агент {agent_id} не найден, используем агента по умолчанию: {agent.agent_id}")
+        # Используем маршрутизатор LangChain для обработки запроса
+        logger.info(f"Маршрутизация запроса пользователя {user_id} с использованием LangChain")
         
-        # Формируем запрос к модели с учетом контекста диалога и системного промпта
-        messages = prepare_messages_for_agent(user_id, agent)
-        logger.info(f"Подготовлены сообщения для модели: {len(messages)} сообщений")
+        # Начинаем процесс генерации ответа
+        result = router.route_request(
+            user_input=text, 
+            chat_history=chat_history,
+            user_id=user_id,
+            session_id=session_id
+        )
         
-        # Генерируем ответ с помощью модели Mistral
-        logger.info(f"Отправка запроса к Mistral для пользователя {user_id}")
+        # Получаем имя использованного агента и ответ
+        agent_name = result.get("agent", "Unknown")
+        response_text = result.get("response", "Извините, не удалось обработать ваш запрос.")
+        status = result.get("status", "error")
+        processing_time = result.get("processing_time", 0)
         
-        try:
-            # Используем прямой запрос к модели
-            response_text = await mistral_client.generate_response(
-                prompt=text,
-                temperature=0.7,
-                max_tokens=1000
-            )
-        except Exception as e:
-            logger.error(f"Ошибка при запросе к модели: {str(e)}")
-            return {
-                "content": f"Произошла ошибка при обработке запроса: {str(e)}",
-                "type": "text",
-                "session_id": session_id,
-                "error": True
-            }
+        logger.info(f"Запрос пользователя {user_id} обработан агентом {agent_name}")
         
-        # Проверяем, не получили ли мы сообщение об ошибке
-        if response_text.startswith("Произошла ошибка"):
-            logger.error(f"Ошибка от Mistral: {response_text}")
-            return {
-                "content": "Не удалось получить ответ от модели. Пожалуйста, попробуйте еще раз или упростите запрос.",
-                "type": "text",
-                "session_id": session_id,
-                "error": True
-            }
-        
-        # Сохраняем ответ ассистента в историю
+        # Добавляем ответ в историю диалога
         conversation_manager.add_assistant_message(user_id, response_text)
         
-        # Логируем успешную обработку
-        logger.info(f"Успешно обработано сообщение от пользователя {user_id} агентом {agent_id}")
-        
-        # Возвращаем ответ
+        # Формируем и возвращаем результат
         return {
             "content": response_text,
             "type": "text",
             "session_id": session_id,
-            "agent": agent_id
+            "agent": agent_name,
+            "status": status,
+            "processing_time": processing_time
         }
-        
     except Exception as e:
-        # В случае ошибки логируем и возвращаем сообщение об ошибке
-        logger.exception(f"Ошибка при обработке сообщения от пользователя {user_id}: {str(e)}")
+        logger.error(f"Ошибка при обработке запроса: {str(e)}")
         return {
-            "content": f"Произошла ошибка при обработке вашего запроса. Пожалуйста, попробуйте позже.",
+            "content": f"Произошла ошибка при обработке запроса: {str(e)}. Пожалуйста, повторите попытку позже.",
             "type": "text",
             "session_id": session_id,
             "error": True
         }
 
-def prepare_messages_for_agent(user_id: int, agent) -> List[Dict[str, str]]:
+def get_chat_history_for_langchain(user_id: str) -> List[Dict[str, str]]:
     """
-    Формирует список сообщений для модели с учетом системного промпта агента и истории диалога
+    Преобразует историю диалога пользователя в формат, подходящий для LangChain.
     
     Args:
-        user_id: ID пользователя
-        agent: Объект агента
+        user_id: Идентификатор пользователя
         
     Returns:
-        List[Dict[str, str]]: Список сообщений для отправки модели
+        List[Dict[str, str]]: История диалога в формате LangChain
     """
-    # Получаем историю сообщений пользователя
-    history = conversation_manager.get_messages(user_id)
+    messages = []
     
-    # Добавляем системный промпт в начало
-    system_prompt = agent.system_prompt
+    # Получаем историю диалога пользователя
+    history = conversation_manager.get_conversation_history(user_id)
     
-    messages = [{"role": "system", "content": system_prompt}]
+    # Преобразуем историю в формат LangChain
+    if history:
+        for message in history:
+            if message["role"] == "user":
+                messages.append({"type": "human", "content": message["content"]})
+            elif message["role"] == "assistant":
+                messages.append({"type": "ai", "content": message["content"]})
     
-    # Добавляем историю сообщений (последние 10 сообщений, чтобы не перегружать контекст)
-    messages.extend(history[-10:])
+    return messages
+
+def prepare_messages_for_agent(user_id: int, agent) -> List[Dict[str, str]]:
+    """
+    Подготавливает сообщения для отправки агенту с учетом контекста диалога.
+    
+    Args:
+        user_id: Идентификатор пользователя
+        agent: Объект агента, который будет обрабатывать запрос
+        
+    Returns:
+        List[Dict[str, str]]: Список сообщений в формате для модели
+    """
+    # Получаем историю диалога пользователя
+    history = conversation_manager.get_conversation_history(user_id)
+    
+    # Формируем список сообщений для модели
+    messages = []
+    
+    # Добавляем системный промпт агента
+    messages.append({
+        "role": "system",
+        "content": agent.system_prompt
+    })
+    
+    # Добавляем историю диалога
+    for message in history:
+        messages.append(message)
+        
+    logger.debug(f"Подготовлено {len(messages)} сообщений для агента")
     
     return messages
 
 async def process_with_mistral(user_id: str, text: str) -> str:
     """
-    Обрабатывает сообщение с помощью модели Mistral
+    Обрабатывает запрос с помощью Mistral API.
     
     Args:
-        user_id: ID пользователя
+        user_id: Идентификатор пользователя
         text: Текст запроса
         
     Returns:
         str: Ответ модели
     """
     try:
-        # Добавляем сообщение в историю
+        # Сохраняем сообщение пользователя
         conversation_manager.add_user_message(user_id, text)
         
-        # Определяем агента и формируем сообщения
-        agent_id = agent_manager.route_to_agent(text)
-        agent = agent_manager.get_agent(agent_id)
+        # Формируем историю диалога
+        history = conversation_manager.get_conversation_history(user_id)
         
-        if agent is None:
-            agent = agent_manager.get_default_agent()
-            logger.warning(f"Агент {agent_id} не найден, используем агента по умолчанию: {agent.agent_id}")
+        # Формируем промпт для модели
+        prompt = "".join([f"{msg['role']}: {msg['content']}\n" for msg in history])
+        prompt += "assistant: "
         
-        messages = prepare_messages_for_agent(user_id, agent)
+        # Отправляем запрос к модели
+        response = await mistral_client.generate_response(
+            prompt=prompt,
+        )
         
-        # Запрашиваем ответ от модели
-        response = await mistral_client.generate_chat_response(messages)
-        
-        # Сохраняем ответ в историю
+        # Сохраняем ответ модели
         conversation_manager.add_assistant_message(user_id, response)
         
         return response
     except Exception as e:
-        logger.error(f"Ошибка при обработке с помощью Mistral: {str(e)}")
-        return f"Произошла ошибка при обработке вашего запроса: {str(e)}"
+        logger.error(f"Ошибка при обращении к Mistral API: {str(e)}")
+        return f"Извините, произошла ошибка при обработке вашего запроса: {str(e)}"
 
 async def process_task(task_id: str):
-    """Обрабатывает задачу в фоновом режиме"""
+    """
+    Обрабатывает задачу в фоне.
+    
+    Args:
+        task_id: Идентификатор задачи
+    """
     if task_id not in tasks:
-        logger.error(f"Задача {task_id} не найдена для обработки")
+        logger.error(f"Задача {task_id} не найдена")
         return
     
+    logger.info(f"Начата обработка задачи {task_id}")
+    
     task = tasks[task_id]
+    task["status"] = "processing"
     
     try:
-        # Меняем статус на "processing"
-        task["status"] = "processing"
+        # Имитация асинхронной обработки
+        await asyncio.sleep(5)
         
-        # Имитируем обработку
-        await asyncio.sleep(2)
-        
-        # В реальном приложении здесь будет логика обработки задачи
-        task["result"] = {"message": "Задача успешно обработана"}
+        # Обновляем статус задачи
         task["status"] = "completed"
+        task["result"] = {"message": "Задача успешно выполнена"}
         
-        logger.info(f"Задача {task_id} успешно обработана")
+        logger.info(f"Задача {task_id} успешно выполнена")
     except Exception as e:
+        logger.error(f"Ошибка при обработке задачи {task_id}: {str(e)}")
         task["status"] = "failed"
         task["result"] = {"error": str(e)}
-        logger.error(f"Ошибка при обработке задачи {task_id}: {e}")
 
 async def process_message_task(task_id: str):
-    """Обрабатывает задачу обработки сообщения"""
+    """
+    Обрабатывает задачу обработки сообщения.
+    
+    Args:
+        task_id: Идентификатор задачи
+    """
     if task_id not in tasks:
-        logger.error(f"Задача {task_id} не найдена для обработки")
+        logger.error(f"Задача {task_id} не найдена")
         return
     
     task = tasks[task_id]
     message = task["data"]
     
     try:
-        # Обработка сообщения с помощью Mistral
+        # Выполняем обработку сообщения
         user_id = message.get("user_id", "unknown")
+        session_id = message.get("session_id", "default")
         text = message.get("text", "")
         
-        response = await process_with_mistral(user_id, text)
+        # Добавляем статусы к задаче для отслеживания прогресса
+        task["status_messages"] = ["Начало обработки сообщения"]
         
-        task["result"] = {
-            "content": response,
-            "type": "text"
-        }
+        # Имитация обработки
+        await asyncio.sleep(2)
+        task["status_messages"].append("Анализ запроса")
+        
+        await asyncio.sleep(3)
+        task["status_messages"].append("Генерация ответа")
+        
+        # Обрабатываем запрос с помощью LangChain маршрутизатора
+        chat_history = get_chat_history_for_langchain(user_id)
+        result = router.route_request(
+            user_input=text, 
+            chat_history=chat_history,
+            user_id=user_id,
+            session_id=session_id
+        )
+        
+        # Добавляем ответ к задаче
+        task["result"] = result
         task["status"] = "completed"
+        task["status_messages"].append("Обработка завершена")
         
-        logger.info(f"Задача обработки сообщения {task_id} выполнена успешно")
+        logger.info(f"Задача {task_id} успешно выполнена")
     except Exception as e:
+        logger.error(f"Ошибка при обработке сообщения: {str(e)}")
         task["status"] = "failed"
         task["result"] = {"error": str(e)}
-        logger.error(f"Ошибка при обработке задачи сообщения {task_id}: {e}")
+        task["status_messages"].append(f"Ошибка: {str(e)}")
 
 def run_server():
-    """Запускает сервер FastAPI с использованием Uvicorn"""
-    try:
-        # Получаем порт из переменной окружения или используем порт по умолчанию
-        port = int(os.environ.get("API_SERVER_PORT", 8002))
-        
-        # Запускаем сервер с Uvicorn
-        uvicorn.run(
-            "multi_agent_system.api_server:app",
-            host="0.0.0.0",
-            port=port,
-            reload=False,
-            log_level="info"
-        )
-    except Exception as e:
-        logger.error(f"Не удалось запустить API-сервер: {e}")
-        sys.exit(1)
+    """Запускает сервер оркестратора"""
+    # Проверяем, не запущен ли уже сервер
+    if check_and_kill_duplicate():
+        logger.info("Найдены запущенные экземпляры сервера, они будут завершены")
+    
+    # Настраиваем обработчик сигналов для корректного завершения
+    def handle_exit(signum, frame):
+        logger.info(f"Получен сигнал {signum}, завершаем работу")
+        sys.exit(0)
+    
+    signal.signal(signal.SIGINT, handle_exit)
+    
+    # Запускаем сервер
+    port = int(os.environ.get("API_PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
 
 if __name__ == "__main__":
-    # Запускаем сервер
     run_server() 
