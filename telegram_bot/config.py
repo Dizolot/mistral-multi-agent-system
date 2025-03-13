@@ -19,8 +19,8 @@ if not TELEGRAM_TOKEN:
 ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID", "")
 
 # URL для взаимодействия с Mistral API
-# В соответствии с архитектурой, модель размещена на сервере 139.59.241.176:8000
-MISTRAL_API_URL = os.getenv("MISTRAL_API_URL", "http://139.59.241.176:8000")
+# В соответствии с архитектурой, модель размещена на сервере 139.59.241.176:8080
+MISTRAL_API_URL = os.getenv("MISTRAL_API_URL", "http://139.59.241.176:8080")
 
 # URL для взаимодействия с оркестратором
 ORCHESTRATOR_API_URL = os.getenv("ORCHESTRATOR_API_URL", "http://localhost:8000")
@@ -29,7 +29,7 @@ ORCHESTRATOR_API_URL = os.getenv("ORCHESTRATOR_API_URL", "http://localhost:8000"
 USE_ORCHESTRATOR = os.getenv("USE_ORCHESTRATOR", "True").lower() in ("true", "1", "yes")
 
 # Параметры модели
-DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "mistral-7b-instruct")
+DEFAULT_MODEL = os.getenv("DEFAULT_MODEL", "TheBloke/Mistral-7B-Instruct-v0.3-GPTQ")
 DEFAULT_TEMPERATURE = float(os.getenv("DEFAULT_TEMPERATURE", "0.7"))
 DEFAULT_MAX_TOKENS = int(os.getenv("DEFAULT_MAX_TOKENS", "1000"))
 

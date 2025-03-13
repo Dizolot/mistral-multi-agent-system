@@ -8,8 +8,10 @@ import sys
 import logging
 import psutil
 import time
-import asyncio
 from pathlib import Path
+from telegram.ext import Application
+from telegram_bot.config import config
+from telegram_bot.model_service_client import ModelServiceClient
 
 # Добавляем корневую директорию проекта в sys.path
 project_root = Path(__file__).parent.absolute()
@@ -24,64 +26,74 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.StreamHandler(),
-        logging.FileHandler(os.path.join(logs_dir, "telegram_bot.log"))
+        logging.FileHandler(os.path.join(logs_dir, "telegram_bot.log")),
+        logging.StreamHandler()
     ]
 )
 
 logger = logging.getLogger(__name__)
 
-# Функция для проверки и остановки уже запущенных экземпляров бота
 def check_and_kill_duplicate_bots():
     """
-    Проверяет наличие других запущенных экземпляров бота 
-    и завершает их перед запуском.
+    Проверяет и завершает другие экземпляры бота
     """
-    try:
-        current_pid = os.getpid()
-        current_process = psutil.Process(current_pid)
-        bot_processes_found = False
-        
-        for process in psutil.process_iter(['pid', 'name', 'cmdline']):
-            if process.info['pid'] != current_pid and process.info['name'] == current_process.name():
-                cmdline = ' '.join(process.info['cmdline']) if process.info['cmdline'] else ''
-                if any(x in cmdline for x in ['run_telegram_bot.py', 'telegram_bot.py']):
-                    # Проверяем, не является ли процесс родительским для текущего
-                    if process.info['pid'] != os.getppid():
-                        logger.warning(f"Найден дубликат процесса бота с PID {process.info['pid']}, завершаем его")
-                        try:
-                            process.terminate()
-                            bot_processes_found = True
-                        except psutil.NoSuchProcess:
-                            logger.warning(f"Процесс {process.info['pid']} уже завершен")
-        
-        # Если нашли другие процессы, ждем их завершения
-        if bot_processes_found:
-            logger.info("Ожидаем завершения других экземпляров бота...")
-            time.sleep(2)  # Даем время на корректное завершение
-            
-        return bot_processes_found
-    except Exception as e:
-        logger.warning(f"Ошибка при проверке дубликатов бота: {e}")
-        return False
+    current_pid = os.getpid()
+    for proc in psutil.process_iter(['pid', 'name', 'cmdline']):
+        try:
+            if proc.info['cmdline'] and 'python' in proc.info['cmdline'][0] and 'run_telegram_bot.py' in ' '.join(proc.info['cmdline']):
+                if proc.info['pid'] != current_pid:
+                    logger.warning(f"Найден дубликат процесса бота с PID {proc.info['pid']}, завершаем его")
+                    psutil.Process(proc.info['pid']).terminate()
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
+    
+    # Даем время на завершение процессов
+    logger.info("Ожидаем завершения других экземпляров бота...")
+    time.sleep(2)
 
-if __name__ == "__main__":
+def main():
+    """
+    Основная функция для запуска бота
+    """
     try:
         # Проверяем и останавливаем другие экземпляры бота
         check_and_kill_duplicate_bots()
-        
-        # Импортируем модуль создания приложения
-        from telegram_bot import create_application
-        from telegram_bot.config import config
         
         # Выводим информацию о запуске
         logger.info("Запуск Telegram-бота с интеграцией Mistral")
         
         # Создаем и запускаем приложение
-        application = asyncio.run(create_application(config))
-        application.run_polling()
+        application = Application.builder().token(config.TELEGRAM_BOT_TOKEN).build()
+        
+        # Инициализируем клиент сервиса моделей
+        client = ModelServiceClient(model_name="mistral")
+        application.bot_data["client"] = client
+        
+        # Добавляем обработчики
+        from telegram_bot.telegram_bot import (
+            start, help_command, reset, message_handler
+        )
+        from telegram.ext import CommandHandler, MessageHandler, filters
+        
+        application.add_handler(CommandHandler("start", start))
+        application.add_handler(CommandHandler("help", help_command))
+        application.add_handler(CommandHandler("reset", reset))
+        application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, message_handler))
+        
+        # Запускаем бота
+        logger.info("Запускаем бота в режиме polling...")
+        application.run_polling(drop_pending_updates=True)
         
         logger.info("Бот запущен и готов к работе")
     except Exception as e:
         logger.exception(f"Ошибка при запуске бота: {e}")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    try:
+        main()
+    except KeyboardInterrupt:
+        logger.info("Получен сигнал завершения, останавливаем бота...")
+    except Exception as e:
+        logger.exception(f"Критическая ошибка: {e}")
         sys.exit(1) 

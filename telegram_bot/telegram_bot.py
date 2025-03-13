@@ -26,8 +26,8 @@ from telegram_bot.config import (
     MAX_HISTORY_LENGTH
 )
 
-from telegram_bot.mistral_client import MistralClient
-from telegram_bot.orchestrator_adapter import OrchestratorAdapter
+# Используем ModelServiceClient вместо MistralClient
+from telegram_bot.model_service_client import ModelServiceClient
 
 # Настройка логирования
 logging.basicConfig(
@@ -76,6 +76,39 @@ async def reset(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     
     await update.message.reply_text(RESET_MESSAGE)
 
+async def model_info(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    """
+    Обработчик команды /model - показывает информацию о текущей модели
+    """
+    if not update.message:
+        return
+    
+    try:
+        # Получаем информацию о модели
+        model_info = await context.bot_data["client"].get_model_info()
+        
+        if "error" in model_info:
+            await update.message.reply_text(f"Не удалось получить информацию о модели: {model_info['error']}")
+            return
+            
+        # Форматируем информацию
+        info_text = "📊 **Информация о модели**\n\n"
+        info_text += f"📌 **Название**: {model_info.get('name', 'Нет данных')}\n"
+        info_text += f"🏢 **Провайдер**: {model_info.get('provider', 'Нет данных')}\n"
+        info_text += f"📝 **Максимум токенов**: {model_info.get('max_tokens', 'Нет данных')}\n"
+        
+        if "description" in model_info:
+            info_text += f"ℹ️ **Описание**: {model_info['description']}\n"
+            
+        if "capabilities" in model_info:
+            capabilities = ", ".join(model_info["capabilities"])
+            info_text += f"🔧 **Возможности**: {capabilities}\n"
+            
+        await update.message.reply_text(info_text)
+    except Exception as e:
+        logger.error(f"Ошибка при получении информации о модели: {str(e)}", exc_info=True)
+        await update.message.reply_text(f"Произошла ошибка: {str(e)}")
+
 async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """
     Обработчик текстовых сообщений
@@ -107,9 +140,11 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) ->
             reply_to_message_id=update.message.message_id
         )
 
-        # Получаем ответ от модели
+        # Получаем ответ от модели через сервис моделей
         response = await context.bot_data["client"].generate_chat_response(
-            messages=chat_histories[chat_id]
+            messages=chat_histories[chat_id],
+            temperature=0.7,  # Можно настроить в зависимости от предпочтений
+            max_tokens=1000
         )
 
         # Добавляем ответ в историю
@@ -149,14 +184,15 @@ async def create_application(config) -> Application:
     # Создаем приложение
     application = Application.builder().token(config.TELEGRAM_BOT_TOKEN).build()
     
-    # Инициализируем клиент Mistral
-    client = MistralClient(config.MISTRAL_API_BASE_URL)
+    # Инициализируем клиент сервиса моделей вместо прямого клиента Mistral
+    client = ModelServiceClient(model_name="mistral-small")
     application.bot_data["client"] = client
     
     # Добавляем обработчики команд
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("help", help_command))
     application.add_handler(CommandHandler("reset", reset))
+    application.add_handler(CommandHandler("model", model_info))
     
     # Добавляем обработчик текстовых сообщений
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, message_handler))
