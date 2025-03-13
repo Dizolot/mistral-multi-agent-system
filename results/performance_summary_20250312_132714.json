@@ -1,0 +1,27 @@
+{
+  "timestamp": "20250312_132714",
+  "total_tests": 2,
+  "successful_tests": 0,
+  "failed_tests": 2,
+  "total_execution_time": 0.4890739917755127,
+  "results": [
+    {
+      "test_name": "test_memory_performance.py",
+      "status": "\u041e\u0428\u0418\u0411\u041a\u0410",
+      "success": false,
+      "execution_time": 0.28341197967529297,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/tests/performance/memory_system/test_memory_performance.py\", line 18, in <module>\n    from src.core.memory_system import (\nModuleNotFoundError: No module named 'src'\n",
+      "return_code": 1
+    },
+    {
+      "test_name": "test_memory_agent_performance.py",
+      "status": "\u041e\u0428\u0418\u0411\u041a\u0410",
+      "success": false,
+      "execution_time": 0.20566201210021973,
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/tests/performance/memory_system/benchmarks/test_memory_agent_performance.py\", line 22, in <module>\n    from src.core.memory_system import (\nModuleNotFoundError: No module named 'src'\n",
+      "return_code": 1
+    }
+  ]
+}

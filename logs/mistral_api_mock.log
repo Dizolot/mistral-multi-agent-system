@@ -1391,4 +1391,10 @@ INFO:     Waiting for application startup.
 2025-03-11 05:24:07 | INFO | Мок-сервер Mistral API запущен
 INFO:     Application startup complete.
 2025-03-11 05:24:15 | ERROR | Ошибка при запуске мок-сервера Mistral API: [Errno 2] No such file or directory: '/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/test_memory_storage_a9a59b5ffe874b7fba0ba4ab2e3f4474'
-2025-03-11 05:24:15.942 | ERROR    | multi_agent_system.mistral_api_mock:run_server:129 - Ошибка при запуске мок-сервера Mistral API: [Errno 2] No such file or directory: '/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/test_memory_storage_a9a59b5ffe874b7fba0ba4ab2e3f4474'
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+2025-03-13 13:55:41 | INFO | Мок-сервер Mistral API остановлен
+INFO:     Application shutdown complete.
+INFO:     Finished server process [47886]
+der/mistral-multi-agent-system/test_memory_storage_a9a59b5ffe874b7fba0ba4ab2e3f4474'
+2025-03-13 13:55:41.122 | INFO     | multi_agent_system.mistral_api_mock:shutdown_event:58 - Мок-сервер Mistral API остановлен

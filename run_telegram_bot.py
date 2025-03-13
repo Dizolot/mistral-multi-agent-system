@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Скрипт для запуска Telegram-бота с интеграцией оркестратора
+Скрипт для запуска Telegram-бота с интеграцией Mistral
 """
 
 import os
@@ -8,6 +8,7 @@ import sys
 import logging
 import psutil
 import time
+import asyncio
 from pathlib import Path
 
 # Добавляем корневую директорию проекта в sys.path
@@ -69,14 +70,18 @@ if __name__ == "__main__":
         # Проверяем и останавливаем другие экземпляры бота
         check_and_kill_duplicate_bots()
         
-        # Импортируем основной модуль бота
-        from telegram_bot.telegram_bot import main
+        # Импортируем модуль создания приложения
+        from telegram_bot import create_application
+        from telegram_bot.config import config
         
         # Выводим информацию о запуске
-        logger.info("Запуск Telegram-бота с интеграцией оркестратора")
+        logger.info("Запуск Telegram-бота с интеграцией Mistral")
         
-        # Запускаем бота
-        main()
+        # Создаем и запускаем приложение
+        application = asyncio.run(create_application(config))
+        application.run_polling()
+        
+        logger.info("Бот запущен и готов к работе")
     except Exception as e:
         logger.exception(f"Ошибка при запуске бота: {e}")
         sys.exit(1) 

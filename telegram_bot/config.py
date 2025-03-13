@@ -4,6 +4,7 @@
 
 import os
 from dotenv import load_dotenv
+from dataclasses import dataclass
 
 # Загружаем переменные окружения из .env-файла
 load_dotenv()
@@ -18,10 +19,11 @@ if not TELEGRAM_TOKEN:
 ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID", "")
 
 # URL для взаимодействия с Mistral API
-MISTRAL_API_URL = os.getenv("MISTRAL_API_URL", "http://localhost:8080")
+# В соответствии с архитектурой, модель размещена на сервере 139.59.241.176:8000
+MISTRAL_API_URL = os.getenv("MISTRAL_API_URL", "http://139.59.241.176:8000")
 
 # URL для взаимодействия с оркестратором
-ORCHESTRATOR_API_URL = os.getenv("ORCHESTRATOR_API_URL", "http://localhost:8002")
+ORCHESTRATOR_API_URL = os.getenv("ORCHESTRATOR_API_URL", "http://localhost:8000")
 
 # Флаг использования оркестратора (если False, то используется прямой режим)
 USE_ORCHESTRATOR = os.getenv("USE_ORCHESTRATOR", "True").lower() in ("true", "1", "yes")
@@ -53,17 +55,10 @@ HELP_MESSAGE = """
 
 1. Просто напишите мне сообщение с вопросом или задачей
 2. Для сброса диалога используйте команду /reset
-3. Для переключения режима работы используйте команду /mode
-
-Поддерживаемые режимы:
-- direct: прямое взаимодействие с моделью
-- orchestrator: обработка через оркестратор (если доступен)
-
-Пример переключения режима: /mode direct
 """
 
 RESET_MESSAGE = "🔄 Диалог сброшен. Можете начать новый разговор."
-PROCESSING_MESSAGE = "⌛ Инициализация обработки запроса... Сейчас покажу ход обработки."
+PROCESSING_MESSAGE = "⌛ Обрабатываю ваш запрос..."
 ERROR_MESSAGE = "❌ Произошла ошибка при обработке вашего запроса. Пожалуйста, попробуйте еще раз."
 TIMEOUT_MESSAGE = "⌛ Запрос занял слишком много времени. Пожалуйста, попробуйте еще раз или упростите запрос."
 
@@ -71,4 +66,19 @@ TIMEOUT_MESSAGE = "⌛ Запрос занял слишком много вре�
 LOG_DIRECTORY = os.getenv("LOG_DIRECTORY", "logs")
 
 # Создаем директорию для логов, если она не существует
-os.makedirs(LOG_DIRECTORY, exist_ok=True) 
+os.makedirs(LOG_DIRECTORY, exist_ok=True)
+
+@dataclass
+class Config:
+    # Telegram
+    TELEGRAM_BOT_TOKEN: str = TELEGRAM_TOKEN
+    
+    # Mistral
+    MISTRAL_API_BASE_URL: str = MISTRAL_API_URL
+    MISTRAL_API_TIMEOUT: int = REQUEST_TIMEOUT
+    
+    # Orchestrator
+    ORCHESTRATOR_API_BASE_URL: str = ORCHESTRATOR_API_URL
+    ORCHESTRATOR_API_TIMEOUT: int = 30
+
+config = Config() 

@@ -154,4 +154,24 @@ class ConversationManager:
             content: Текст ответа
         """
         conversation = self.get_conversation(user_id)
-        conversation.add_assistant_message(content) 
+        conversation.add_assistant_message(content)
+        
+    def get_conversation_history(self, user_id: str) -> List[Dict[str, str]]:
+        """
+        Получает историю сообщений пользователя.
+        Алиас для метода get_messages для совместимости с функцией get_chat_history_for_langchain.
+        
+        Args:
+            user_id: ID пользователя в строковом формате
+            
+        Returns:
+            Список сообщений в формате [{role: "", content: ""}, ...]
+        """
+        # Преобразуем user_id из строки в число, если это возможно
+        try:
+            user_id_int = int(user_id)
+        except ValueError:
+            logger.warning(f"Невозможно преобразовать user_id '{user_id}' в число. Используем как строку.")
+            user_id_int = user_id
+            
+        return self.get_messages(user_id_int) 

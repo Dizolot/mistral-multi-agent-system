@@ -9,6 +9,9 @@ import time
 from datetime import datetime
 from typing import Dict, List, Any, Optional
 
+# Импортируем модуль async_utils для поддержки вложенных циклов событий
+from multi_agent_system.async_utils import get_or_create_event_loop, sync_to_async
+
 # Импорты LangChain
 from langchain_core.language_models import BaseLLM, LLM
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder

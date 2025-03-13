@@ -1,0 +1,60 @@
+[
+  {
+    "timestamp": "2025-03-13T02:51:11.854236",
+    "user_id": "test_user",
+    "session_id": "test_session",
+    "agent_name": "system",
+    "request": "\u0442\u0435\u0441\u0442\u043e\u0432\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u0435",
+    "response": "\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043d\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043d\u0430. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0439\u0442\u0435 \u0430\u0433\u0435\u043d\u0442\u043e\u0432.",
+    "processing_time": 0.3085770606994629,
+    "is_successful": false,
+    "metadata": {
+      "error": "no_agents_available"
+    }
+  },
+  {
+    "timestamp": "2025-03-13T03:25:48.126514",
+    "user_id": "test_user",
+    "session_id": "test_session",
+    "agent_name": "general",
+    "request": "\u041f\u0440\u0438\u0432\u0435\u0442! \u041a\u0430\u043a \u0442\u044b \u0441\u0435\u0431\u044f \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u0435\u0448\u044c?",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.3355371952056885,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.19142508506774902,
+      "agent_time": 0.14411306381225586,
+      "chat_history_length": 1
+    }
+  },
+  {
+    "timestamp": "2025-03-13T03:27:46.339550",
+    "user_id": "test_user",
+    "session_id": "test_session",
+    "agent_name": "general",
+    "request": "\u041f\u0440\u0438\u0432\u0435\u0442! \u0420\u0430\u0441\u0441\u043a\u0430\u0436\u0438 \u043e \u0441\u0435\u0431\u0435 \u043a\u0440\u0430\u0442\u043a\u043e",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.2782139778137207,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.1460709571838379,
+      "agent_time": 0.1321430206298828,
+      "chat_history_length": 1
+    }
+  },
+  {
+    "timestamp": "2025-03-13T03:31:46.154668",
+    "user_id": "test_user",
+    "session_id": "test_session",
+    "agent_name": "general",
+    "request": "\u041f\u0440\u0438\u0432\u0435\u0442! \u0420\u0430\u0441\u0441\u043a\u0430\u0436\u0438 \u043e \u0441\u0435\u0431\u0435 \u043a\u0440\u0430\u0442\u043a\u043e",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.2992522716522217,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.167708158493042,
+      "agent_time": 0.1315441131591797,
+      "chat_history_length": 1
+    }
+  }
+]

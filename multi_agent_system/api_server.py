@@ -11,6 +11,9 @@ import sys
 import json
 from typing import Dict, Any, Optional, List
 
+# Импортируем модуль async_utils для поддержки вложенных циклов событий
+from multi_agent_system.async_utils import get_or_create_event_loop, sync_to_async
+
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -25,13 +28,11 @@ from multi_agent_system.logger import get_logger
 from telegram_bot.mistral_client import MistralClient
 from telegram_bot.conversation_manager import ConversationManager
 
-# Импорт маршрутизатора LangChain и агентов
+# Импорт маршрутизатора LangChain
 from multi_agent_system.orchestrator.langchain_router import LangChainRouter
-from multi_agent_system.agents.general_agent import GeneralAgent
-from multi_agent_system.agents.programming_agent import ProgrammingAgent
 
-# Импорт менеджера агентов
-from multi_agent_system.agents.agent_manager import agent_manager
+# Импорт модуля регистрации агентов
+from multi_agent_system.orchestrator.register_agents import register_agents
 
 # Настройка логирования для API-сервера
 logger = get_logger("api_server", "api_server.log")
@@ -44,61 +45,17 @@ MISTRAL_API_URL = os.environ.get("MISTRAL_API_URL", "http://139.59.241.176:8080"
 mistral_client = MistralClient(base_url=MISTRAL_API_URL)
 conversation_manager = ConversationManager()
 
-# Инициализация маршрутизатора LangChain и агентов
+# Инициализация маршрутизатора LangChain
 router = LangChainRouter(mistral_api_url=MISTRAL_API_URL)
 
-# Инициализация агентов
-general_agent = GeneralAgent(mistral_api_url=MISTRAL_API_URL)
-programming_agent = ProgrammingAgent(mistral_api_url=MISTRAL_API_URL)
-
-# Регистрация агентов в маршрутизаторе
-router.register_agent(
-    name=general_agent.name,
-    description=general_agent.description,
-    handler=general_agent.process
-)
-
-router.register_agent(
-    name=programming_agent.name,
-    description=programming_agent.description,
-    handler=programming_agent.process
-)
-
-# Проверка, исполняется ли уже этот сервис
-def check_and_kill_duplicate():
-    try:
-        import psutil
-        current_pid = os.getpid()
-        current_process = psutil.Process(current_pid)
-        other_processes_found = False
-        for process in psutil.process_iter(['pid', 'name', 'cmdline']):
-            if process.info['pid'] != current_pid and process.info['name'] == current_process.name():
-                cmdline = ' '.join(process.info['cmdline']) if process.info['cmdline'] else ''
-                if any(arg in cmdline for arg in [__file__, os.path.basename(__file__)]):
-                    # Проверяем, не является ли процесс родительским для текущего
-                    if process.info['pid'] != os.getppid():
-                        logger.warning(f"Найден дубликат процесса с PID {process.info['pid']}, завершаем его")
-                        try:
-                            process.terminate()
-                            other_processes_found = True
-                        except psutil.NoSuchProcess:
-                            logger.warning(f"Процесс {process.info['pid']} уже завершен")
-        return other_processes_found
-    except ImportError:
-        logger.warning("Модуль psutil не установлен, пропускаем проверку дубликатов")
-        return False
-    except Exception as e:
-        logger.warning(f"Ошибка при проверке дубликатов: {e}")
-        return False
-
-# Создаем приложение FastAPI
+# Создание приложения FastAPI
 app = FastAPI(
     title="Orchestrator API",
     description="API for Mistral Multi-Agent System Orchestrator",
     version="0.1.0"
 )
 
-# Добавляем middleware для CORS
+# Настройка CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -109,6 +66,35 @@ app.add_middleware(
 
 # Словарь для хранения задач
 tasks = {}
+messages = {}
+
+# Функция для проверки и остановки дубликатов процесса
+def check_and_kill_duplicate():
+    """
+    Проверяет наличие других запущенных экземпляров API-сервера
+    и завершает их перед запуском.
+    """
+    try:
+        import psutil
+        current_pid = os.getpid()
+        current_process = psutil.Process(current_pid)
+        
+        for process in psutil.process_iter(['pid', 'name', 'cmdline']):
+            if process.info['pid'] != current_pid and process.info['name'] == current_process.name():
+                cmdline = ' '.join(process.info['cmdline']) if process.info['cmdline'] else ''
+                if 'api_server.py' in cmdline or 'uvicorn' in cmdline:
+                    # Проверяем, не является ли процесс родительским для текущего
+                    if process.info['pid'] != os.getppid():
+                        logger.warning(f"Найден дубликат процесса API-сервера с PID {process.info['pid']}, завершаем его")
+                        try:
+                            process.terminate()
+                        except psutil.NoSuchProcess:
+                            logger.warning(f"Процесс {process.info['pid']} уже завершен")
+        
+        return True
+    except Exception as e:
+        logger.warning(f"Ошибка при проверке дубликатов API-сервера: {e}")
+        return False
 
 @app.on_event("startup")
 async def startup_event():
@@ -317,9 +303,9 @@ def get_chat_history_for_langchain(user_id: str) -> List[Dict[str, str]]:
     if history:
         for message in history:
             if message["role"] == "user":
-                messages.append({"type": "human", "content": message["content"]})
+                messages.append({"role": "user", "content": message["content"]})
             elif message["role"] == "assistant":
-                messages.append({"type": "ai", "content": message["content"]})
+                messages.append({"role": "assistant", "content": message["content"]})
     
     return messages
 
@@ -470,11 +456,17 @@ async def process_message_task(task_id: str):
         task["result"] = {"error": str(e)}
         task["status_messages"].append(f"Ошибка: {str(e)}")
 
-def run_server():
+def run_server(host: str = "0.0.0.0", port: int = 8002):
     """Запускает сервер оркестратора"""
     # Проверяем, не запущен ли уже сервер
     if check_and_kill_duplicate():
         logger.info("Найдены запущенные экземпляры сервера, они будут завершены")
+    
+    # Регистрируем агентов в маршрутизаторе
+    register_agents(router, mistral_client)
+    
+    # Выводим информацию о количестве зарегистрированных агентов
+    logger.info(f"LangChain маршрутизатор: {len(router.available_agents)} агентов зарегистрировано")
     
     # Настраиваем обработчик сигналов для корректного завершения
     def handle_exit(signum, frame):
@@ -484,8 +476,7 @@ def run_server():
     signal.signal(signal.SIGINT, handle_exit)
     
     # Запускаем сервер
-    port = int(os.environ.get("API_PORT", 8000))
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    uvicorn.run(app, host=host, port=port)
 
 if __name__ == "__main__":
     run_server() 

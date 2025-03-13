@@ -1,0 +1,178 @@
+[
+  {
+    "timestamp": "2025-03-13T02:48:21.115319",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "system",
+    "request": "J",
+    "response": "\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043d\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043d\u0430. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0439\u0442\u0435 \u0430\u0433\u0435\u043d\u0442\u043e\u0432.",
+    "processing_time": 0.30334901809692383,
+    "is_successful": false,
+    "metadata": {
+      "error": "no_agents_available"
+    }
+  },
+  {
+    "timestamp": "2025-03-13T02:51:38.238830",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "system",
+    "request": "\u041e",
+    "response": "\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u043d\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043d\u0430. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0439\u0442\u0435 \u0430\u0433\u0435\u043d\u0442\u043e\u0432.",
+    "processing_time": 0.30005502700805664,
+    "is_successful": false,
+    "metadata": {
+      "error": "no_agents_available"
+    }
+  },
+  {
+    "timestamp": "2025-03-13T03:12:23.096526",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u0422\u043b",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.3216531276702881,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.18407511711120605,
+      "agent_time": 0.13757801055908203,
+      "chat_history_length": 1
+    }
+  },
+  {
+    "timestamp": "2025-03-13T03:25:04.312215",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u0430\u044b",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.3446171283721924,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.17931795120239258,
+      "agent_time": 0.1652991771697998,
+      "chat_history_length": 1
+    }
+  },
+  {
+    "timestamp": "2025-03-13T03:27:38.047093",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u0432\u0430\u0432\u0430",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.4397130012512207,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.3077220916748047,
+      "agent_time": 0.13199090957641602,
+      "chat_history_length": 1
+    }
+  },
+  {
+    "timestamp": "2025-03-13T03:53:15.613043",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u0448\u0448",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.37798404693603516,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.24017119407653809,
+      "agent_time": 0.13781499862670898,
+      "chat_history_length": 1
+    }
+  },
+  {
+    "timestamp": "2025-03-13T03:58:29.415163",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u043b\u043e\u0434\u043b",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.6314759254455566,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.3520369529724121,
+      "agent_time": 0.27943897247314453,
+      "chat_history_length": 3
+    }
+  },
+  {
+    "timestamp": "2025-03-13T04:04:52.980177",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u041d\u0438\u0448\u0438",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.32538580894470215,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.19471192359924316,
+      "agent_time": 0.1306750774383545,
+      "chat_history_length": 5
+    }
+  },
+  {
+    "timestamp": "2025-03-13T04:19:29.453349",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u0434\u043b",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.5257339477539062,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.1851201057434082,
+      "agent_time": 0.34061384201049805,
+      "chat_history_length": 7
+    }
+  },
+  {
+    "timestamp": "2025-03-13T04:58:46.445060",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "asdf",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.32740211486816406,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.18901515007019043,
+      "agent_time": 0.13838791847229004,
+      "chat_history_length": 9
+    }
+  },
+  {
+    "timestamp": "2025-03-13T04:59:58.503813",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u044b\u0444",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.3023648262023926,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.1617259979248047,
+      "agent_time": 0.1406388282775879,
+      "chat_history_length": 11
+    }
+  },
+  {
+    "timestamp": "2025-03-13T05:03:51.680628",
+    "user_id": "173818694",
+    "session_id": "telegram_173818694",
+    "agent_name": "general",
+    "request": "\u0430\u0432\u043f",
+    "response": "\u041f\u0440\u043e\u0438\u0437\u043e\u0448\u043b\u0430 \u043e\u0448\u0438\u0431\u043a\u0430 \u043f\u0440\u0438 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0435 \u0437\u0430\u043f\u0440\u043e\u0441\u0430: Cannot run the event loop while another loop is running",
+    "processing_time": 0.32495617866516113,
+    "is_successful": true,
+    "metadata": {
+      "router_time": 0.15928030014038086,
+      "agent_time": 0.16567587852478027,
+      "chat_history_length": 13
+    }
+  }
+]

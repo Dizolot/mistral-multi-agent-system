@@ -13,3 +13,684 @@ INFO:     Waiting for application shutdown.
 INFO:     Application shutdown complete.
 INFO:     Finished server process [7563]
 INFO:     Stopping reloader process [7556]
+2025-03-13 02:15:14,100 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:15:15,019 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:15:15,020 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:15:15,020 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:15:15,020 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:15:15,024 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:15:15,036 - api_server - WARNING - Найден дубликат процесса API-сервера с PID 40384, завершаем его
+2025-03-13 02:15:15,054 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:15:16,049 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:15:16,050 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:20:36,163 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: B...
+2025-03-13 02:20:36,384 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:20:36,385 - api_server - ERROR - Ошибка при обработке запроса: 'ConversationManager' object has no attribute 'get_conversation_history'
+2025-03-13 02:27:43,969 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:27:44,816 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:27:44,816 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:27:44,816 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:27:44,816 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:27:44,819 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:27:44,841 - api_server - WARNING - Найден дубликат процесса API-сервера с PID 90198, завершаем его
+2025-03-13 02:27:44,844 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:27:44,945 - api_server - WARNING - Найден дубликат процесса API-сервера с PID 90198, завершаем его
+2025-03-13 02:27:44,953 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:27:44,954 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:27:45,064 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 02:28:20,744 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:28:21,594 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:28:21,594 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:28:21,594 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:28:21,594 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:28:21,598 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:28:21,619 - api_server - WARNING - Найден дубликат процесса API-сервера с PID 91564, завершаем его
+2025-03-13 02:28:21,621 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:28:21,679 - api_server - WARNING - Найден дубликат процесса API-сервера с PID 91564, завершаем его
+2025-03-13 02:28:21,681 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:28:21,681 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:28:21,751 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 02:29:19,543 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:29:20,422 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:29:20,422 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:29:20,422 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:29:20,422 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:29:20,426 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:29:20,448 - api_server - WARNING - Найден дубликат процесса API-сервера с PID 92002, завершаем его
+2025-03-13 02:29:20,450 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:29:20,515 - api_server - WARNING - Найден дубликат процесса API-сервера с PID 92002, завершаем его
+2025-03-13 02:29:20,516 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:29:20,516 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:29:20,574 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 02:30:05,151 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: H...
+2025-03-13 02:30:05,293 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:30:05,293 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:30:05,293 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 02:30:05,294 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 02:30:05,294 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 02:30:05,294 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 02:30:05,295 - api_server - ERROR - Ошибка при обработке запроса: URL сервера Mistral не указан и не найден в переменных окружения
+2025-03-13 02:34:04,552 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:34:05,634 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:34:05,634 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:34:05,634 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:34:05,635 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:34:05,638 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:34:05,664 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:34:05,732 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:34:05,732 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:34:11,185 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь test123: ...
+2025-03-13 02:34:11,327 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя test123
+2025-03-13 02:34:11,327 - telegram_bot.conversation_manager - WARNING - Невозможно преобразовать user_id 'test123' в число. Используем как строку.
+2025-03-13 02:34:11,327 - api_server - INFO - Маршрутизация запроса пользователя test123 с использованием LangChain
+2025-03-13 02:34:11,327 - memory.buffer_test123 - INFO - Буферная память buffer_test123 инициализирована с максимальным размером 50
+2025-03-13 02:34:11,328 - memory.summary_test123_buffer - INFO - Буферная память summary_test123_buffer инициализирована с максимальным размером 10
+2025-03-13 02:34:11,328 - memory.summary_test123 - INFO - Суммаризирующая память summary_test123 инициализирована с размером буфера 10
+2025-03-13 02:34:11,342 - vector_store.long_term_test123 - INFO - Создана новая коллекция: long_term_test123
+2025-03-13 02:34:11,483 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:34:11,487 - vector_store.long_term_test123 - INFO - Добавлено 1 векторов в коллекцию long_term_test123
+2025-03-13 02:34:11,487 - multi_agent_system.orchestrator.langchain_router - ERROR - Нет зарегистрированных агентов для маршрутизации
+2025-03-13 02:34:11,487 - api_server - ERROR - Ошибка при обработке запроса: 'MemoryManager' object has no attribute 'add_ai_message'
+2025-03-13 02:34:40,646 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: D...
+2025-03-13 02:34:40,800 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:34:40,800 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:34:40,801 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 02:34:40,801 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 02:34:40,801 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 02:34:40,801 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 02:34:40,820 - api_server - ERROR - Ошибка при обработке запроса: Storage folder data/memory/long_term/qdrant is already accessed by another instance of Qdrant client. If you require concurrent access, use Qdrant server instead.
+2025-03-13 02:36:55,479 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 02:37:02,808 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:37:03,735 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:37:03,735 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:37:03,735 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:37:03,736 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:37:03,739 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:37:03,764 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:37:03,831 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:37:03,831 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:38:26,488 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: D...
+2025-03-13 02:38:26,651 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:38:26,651 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:38:26,651 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 02:38:26,651 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 02:38:26,652 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 02:38:26,652 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 02:38:26,673 - vector_store.long_term_173818694 - INFO - Создана новая коллекция: long_term_173818694
+2025-03-13 02:38:26,853 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:38:26,862 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:38:26,863 - multi_agent_system.orchestrator.langchain_router - ERROR - Нет зарегистрированных агентов для маршрутизации
+2025-03-13 02:38:26,863 - api_server - ERROR - Ошибка при обработке запроса: 'MemoryManager' object has no attribute 'add_ai_message'
+2025-03-13 02:41:10,409 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 02:41:19,442 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:41:20,813 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:41:20,813 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:41:20,813 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:41:20,814 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:41:20,817 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:41:20,843 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:41:20,915 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:41:20,916 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:42:04,207 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: K...
+2025-03-13 02:42:04,391 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:42:04,391 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:42:04,391 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 02:42:04,392 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 02:42:04,392 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 02:42:04,392 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 02:42:04,393 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 02:42:04,581 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:42:04,585 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:42:04,585 - multi_agent_system.orchestrator.langchain_router - ERROR - Нет зарегистрированных агентов для маршрутизации
+2025-03-13 02:42:04,721 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:42:04,725 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:42:04,725 - api_server - ERROR - Ошибка при обработке запроса: AgentDataCollector.record_interaction() got an unexpected keyword argument 'metadata'
+2025-03-13 02:45:25,233 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: V...
+2025-03-13 02:45:25,391 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 02:45:25,535 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:45:25,554 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:45:25,554 - multi_agent_system.orchestrator.langchain_router - ERROR - Нет зарегистрированных агентов для маршрутизации
+2025-03-13 02:45:25,694 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:45:25,698 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:45:25,699 - api_server - ERROR - Ошибка при обработке запроса: AgentDataCollector.record_interaction() got an unexpected keyword argument 'metadata'
+2025-03-13 02:47:38,511 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 02:48:07,782 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:48:09,280 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:48:09,280 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:48:09,280 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:48:09,280 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:48:09,284 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:48:09,323 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:48:09,449 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:48:09,450 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:48:20,671 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: J...
+2025-03-13 02:48:20,811 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:48:20,811 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:48:20,811 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 02:48:20,812 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 02:48:20,812 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 02:48:20,812 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 02:48:20,813 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 02:48:20,977 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:48:20,986 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:48:20,986 - multi_agent_system.orchestrator.langchain_router - ERROR - Нет зарегистрированных агентов для маршрутизации
+2025-03-13 02:48:21,113 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:48:21,115 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:48:21,115 - api_server - INFO - Запрос пользователя 173818694 обработан агентом Unknown
+2025-03-13 02:49:37,922 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 02:49:41,778 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 02:49:42,796 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 02:49:42,796 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 02:49:42,796 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 02:49:42,797 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 02:49:42,806 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 02:49:42,854 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 02:49:42,950 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 02:49:42,952 - api_server - INFO - LangChain маршрутизатор: 0 агентов зарегистрировано
+2025-03-13 02:51:11,385 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь test_user: тестовое сообщение...
+2025-03-13 02:51:11,545 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя test_user
+2025-03-13 02:51:11,545 - telegram_bot.conversation_manager - WARNING - Невозможно преобразовать user_id 'test_user' в число. Используем как строку.
+2025-03-13 02:51:11,545 - api_server - INFO - Маршрутизация запроса пользователя test_user с использованием LangChain
+2025-03-13 02:51:11,545 - memory.buffer_test_user - INFO - Буферная память buffer_test_user инициализирована с максимальным размером 50
+2025-03-13 02:51:11,546 - memory.summary_test_user_buffer - INFO - Буферная память summary_test_user_buffer инициализирована с максимальным размером 10
+2025-03-13 02:51:11,546 - memory.summary_test_user - INFO - Суммаризирующая память summary_test_user инициализирована с размером буфера 10
+2025-03-13 02:51:11,547 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 02:51:11,567 - vector_store.long_term_test_user - INFO - Создана новая коллекция: long_term_test_user
+2025-03-13 02:51:11,709 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:51:11,712 - vector_store.long_term_test_user - INFO - Добавлено 1 векторов в коллекцию long_term_test_user
+2025-03-13 02:51:11,712 - multi_agent_system.orchestrator.langchain_router - ERROR - Нет зарегистрированных агентов для маршрутизации
+2025-03-13 02:51:11,851 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:51:11,854 - vector_store.long_term_test_user - INFO - Добавлено 1 векторов в коллекцию long_term_test_user
+2025-03-13 02:51:11,854 - api_server - INFO - Запрос пользователя test_user обработан агентом Unknown
+2025-03-13 02:51:37,800 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: О...
+2025-03-13 02:51:37,937 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:51:37,938 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 02:51:37,938 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 02:51:37,939 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 02:51:37,939 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 02:51:37,939 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 02:51:37,940 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 02:51:38,096 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:51:38,102 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:51:38,102 - multi_agent_system.orchestrator.langchain_router - ERROR - Нет зарегистрированных агентов для маршрутизации
+2025-03-13 02:51:38,236 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 02:51:38,238 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 02:51:38,239 - api_server - INFO - Запрос пользователя 173818694 обработан агентом Unknown
+2025-03-13 02:59:50,173 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 03:00:00,185 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 03:00:01,197 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 03:00:01,197 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 03:00:01,197 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 03:00:01,197 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 03:00:01,200 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 03:00:01,227 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 03:00:01,229 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: general
+2025-03-13 03:00:01,230 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: programming
+2025-03-13 03:00:01,230 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: science
+2025-03-13 03:00:01,230 - multi_agent_system.orchestrator.register_agents - INFO - Зарегистрировано агентов: 3
+2025-03-13 03:00:01,230 - multi_agent_system.orchestrator.register_agents - INFO -   - general: Общий ассистент, который может отвечать на широкий...
+2025-03-13 03:00:01,231 - multi_agent_system.orchestrator.register_agents - INFO -   - programming: Программный ассистент, специализирующийся на вопро...
+2025-03-13 03:00:01,231 - multi_agent_system.orchestrator.register_agents - INFO -   - science: Научный ассистент, специализирующийся на вопросах ...
+2025-03-13 03:00:01,231 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:00:01,306 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 03:00:01,307 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:11:56,488 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 03:11:57,593 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 03:11:58,534 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 03:11:58,534 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 03:11:58,534 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 03:11:58,534 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 03:11:58,537 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 03:11:58,565 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 03:11:58,566 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: general
+2025-03-13 03:11:58,566 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: programming
+2025-03-13 03:11:58,566 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: science
+2025-03-13 03:11:58,566 - multi_agent_system.orchestrator.register_agents - INFO - Зарегистрировано агентов: 3
+2025-03-13 03:11:58,566 - multi_agent_system.orchestrator.register_agents - INFO -   - general: Общий ассистент, который может отвечать на широкий...
+2025-03-13 03:11:58,566 - multi_agent_system.orchestrator.register_agents - INFO -   - programming: Программный ассистент, специализирующийся на вопро...
+2025-03-13 03:11:58,566 - multi_agent_system.orchestrator.register_agents - INFO -   - science: Научный ассистент, специализирующийся на вопросах ...
+2025-03-13 03:11:58,566 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:11:58,631 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 03:11:58,632 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:12:22,627 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: Тл...
+2025-03-13 03:12:22,774 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 03:12:22,774 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 03:12:22,774 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 03:12:22,775 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 03:12:22,775 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 03:12:22,775 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 03:12:22,776 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 03:12:22,948 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:12:22,958 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:12:22,958 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 03:12:22,958 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 03:12:22,961 - mistral_client - ERROR - Ошибка при синхронной генерации текста: Cannot run the event loop while another loop is running
+2025-03-13 03:12:22,962 - mistral_client - ERROR - Трассировка: Traceback (most recent call last):
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 49, in generate_text
+    response = loop.run_until_complete(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1512, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1505, in uvloop.loop.Loop.run_until_complete
+  File "uvloop/loop.pyx", line 1379, in uvloop.loop.Loop.run_forever
+  File "uvloop/loop.pyx", line 524, in uvloop.loop.Loop._run
+RuntimeError: Cannot run the event loop while another loop is running
+
+2025-03-13 03:12:23,094 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:12:23,096 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:12:23,101 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 03:24:42,736 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 03:24:43,790 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 03:24:43,790 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 03:24:43,791 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 03:24:43,791 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 03:24:43,800 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 03:24:43,835 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 03:24:43,835 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: general
+2025-03-13 03:24:43,835 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: programming
+2025-03-13 03:24:43,835 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: science
+2025-03-13 03:24:43,835 - multi_agent_system.orchestrator.register_agents - INFO - Зарегистрировано агентов: 3
+2025-03-13 03:24:43,835 - multi_agent_system.orchestrator.register_agents - INFO -   - general: Общий ассистент, который может отвечать на широкий...
+2025-03-13 03:24:43,835 - multi_agent_system.orchestrator.register_agents - INFO -   - programming: Программный ассистент, специализирующийся на вопро...
+2025-03-13 03:24:43,835 - multi_agent_system.orchestrator.register_agents - INFO -   - science: Научный ассистент, специализирующийся на вопросах ...
+2025-03-13 03:24:43,835 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:24:43,904 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 03:24:43,904 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:25:03,830 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: аы...
+2025-03-13 03:25:03,966 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 03:25:03,967 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 03:25:03,967 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 03:25:03,967 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 03:25:03,968 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 03:25:03,968 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 03:25:03,969 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 03:25:04,137 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:25:04,146 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:25:04,146 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 03:25:04,146 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 03:25:04,147 - mistral_client - INFO - Синхронная генерация текста с использованием nest_asyncio
+2025-03-13 03:25:04,147 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 03:25:04,147 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 03:25:04,147 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 03:25:04,310 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:25:04,312 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:25:04,313 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 03:25:04,313 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:159> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 175, in generate_chat_response
+    prompt = self._convert_messages_to_prompt(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 197, in _convert_messages_to_prompt
+    if msg["role"] == "system":
+       ~~~^^^^^^^^
+TypeError: 'UserMessage' object is not subscriptable
+2025-03-13 03:25:47,621 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь test_user: Привет! Как ты себя чувствуешь?...
+2025-03-13 03:25:47,789 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя test_user
+2025-03-13 03:25:47,790 - telegram_bot.conversation_manager - WARNING - Невозможно преобразовать user_id 'test_user' в число. Используем как строку.
+2025-03-13 03:25:47,790 - api_server - INFO - Маршрутизация запроса пользователя test_user с использованием LangChain
+2025-03-13 03:25:47,791 - memory.buffer_test_user - INFO - Буферная память buffer_test_user инициализирована с максимальным размером 50
+2025-03-13 03:25:47,791 - memory.summary_test_user_buffer - INFO - Буферная память summary_test_user_buffer инициализирована с максимальным размером 10
+2025-03-13 03:25:47,791 - memory.summary_test_user - INFO - Суммаризирующая память summary_test_user инициализирована с размером буфера 10
+2025-03-13 03:25:47,792 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 03:25:47,968 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:25:47,981 - vector_store.long_term_test_user - INFO - Добавлено 1 векторов в коллекцию long_term_test_user
+2025-03-13 03:25:47,982 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 03:25:47,982 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 03:25:47,982 - mistral_client - INFO - Синхронная генерация текста с использованием nest_asyncio
+2025-03-13 03:25:47,983 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 03:25:47,983 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 03:25:47,983 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 03:25:48,123 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:25:48,126 - vector_store.long_term_test_user - INFO - Добавлено 1 векторов в коллекцию long_term_test_user
+2025-03-13 03:25:48,127 - api_server - INFO - Запрос пользователя test_user обработан агентом general
+2025-03-13 03:25:48,130 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:159> exception=KeyError('role')>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 175, in generate_chat_response
+    prompt = self._convert_messages_to_prompt(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 197, in _convert_messages_to_prompt
+    if msg["role"] == "system":
+       ~~~^^^^^^^^
+KeyError: 'role'
+2025-03-13 03:27:02,667 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 03:27:31,726 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 03:27:32,719 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 03:27:32,720 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 03:27:32,720 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 03:27:32,720 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 03:27:32,723 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 03:27:32,750 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 03:27:32,750 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: general
+2025-03-13 03:27:32,751 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: programming
+2025-03-13 03:27:32,751 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: science
+2025-03-13 03:27:32,751 - multi_agent_system.orchestrator.register_agents - INFO - Зарегистрировано агентов: 3
+2025-03-13 03:27:32,751 - multi_agent_system.orchestrator.register_agents - INFO -   - general: Общий ассистент, который может отвечать на широкий...
+2025-03-13 03:27:32,751 - multi_agent_system.orchestrator.register_agents - INFO -   - programming: Программный ассистент, специализирующийся на вопро...
+2025-03-13 03:27:32,751 - multi_agent_system.orchestrator.register_agents - INFO -   - science: Научный ассистент, специализирующийся на вопросах ...
+2025-03-13 03:27:32,751 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:27:32,830 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 03:27:32,830 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:27:37,449 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: вава...
+2025-03-13 03:27:37,603 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 03:27:37,604 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 03:27:37,604 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 03:27:37,607 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 03:27:37,608 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 03:27:37,608 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 03:27:37,609 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 03:27:37,901 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:27:37,914 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:27:37,914 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 03:27:37,914 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 03:27:37,915 - mistral_client - INFO - Синхронная генерация текста с использованием nest_asyncio
+2025-03-13 03:27:37,915 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 03:27:37,915 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 03:27:37,916 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 03:27:38,044 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:27:38,046 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:27:38,048 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 03:27:38,048 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:159> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 175, in generate_chat_response
+    prompt = self._convert_messages_to_prompt(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 197, in _convert_messages_to_prompt
+    if msg["role"] == "system":
+       ~~~^^^^^^^^
+TypeError: 'UserMessage' object is not subscriptable
+2025-03-13 03:27:45,927 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь test_user: Привет! Расскажи о себе кратко...
+2025-03-13 03:27:46,060 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя test_user
+2025-03-13 03:27:46,060 - telegram_bot.conversation_manager - WARNING - Невозможно преобразовать user_id 'test_user' в число. Используем как строку.
+2025-03-13 03:27:46,061 - api_server - INFO - Маршрутизация запроса пользователя test_user с использованием LangChain
+2025-03-13 03:27:46,061 - memory.buffer_test_user - INFO - Буферная память buffer_test_user инициализирована с максимальным размером 50
+2025-03-13 03:27:46,061 - memory.summary_test_user_buffer - INFO - Буферная память summary_test_user_buffer инициализирована с максимальным размером 10
+2025-03-13 03:27:46,061 - memory.summary_test_user - INFO - Суммаризирующая память summary_test_user инициализирована с размером буфера 10
+2025-03-13 03:27:46,062 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 03:27:46,204 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:27:46,207 - vector_store.long_term_test_user - INFO - Добавлено 1 векторов в коллекцию long_term_test_user
+2025-03-13 03:27:46,207 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 03:27:46,207 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 03:27:46,207 - mistral_client - INFO - Синхронная генерация текста с использованием nest_asyncio
+2025-03-13 03:27:46,207 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 03:27:46,207 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 03:27:46,207 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 03:27:46,337 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:27:46,339 - vector_store.long_term_test_user - INFO - Добавлено 1 векторов в коллекцию long_term_test_user
+2025-03-13 03:27:46,340 - api_server - INFO - Запрос пользователя test_user обработан агентом general
+2025-03-13 03:27:46,341 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:159> exception=KeyError('role')>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 175, in generate_chat_response
+    prompt = self._convert_messages_to_prompt(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 197, in _convert_messages_to_prompt
+    if msg["role"] == "system":
+       ~~~^^^^^^^^
+KeyError: 'role'
+2025-03-13 03:30:19,034 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 03:31:28,864 - async_utils - INFO - nest_asyncio применен для поддержки вложенных циклов событий
+2025-03-13 03:31:30,410 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 03:31:31,580 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 03:31:31,580 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 03:31:31,580 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 03:31:31,580 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 03:31:31,583 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 03:31:31,607 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 03:31:31,607 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: general
+2025-03-13 03:31:31,607 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: programming
+2025-03-13 03:31:31,607 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: science
+2025-03-13 03:31:31,607 - multi_agent_system.orchestrator.register_agents - INFO - Зарегистрировано агентов: 3
+2025-03-13 03:31:31,607 - multi_agent_system.orchestrator.register_agents - INFO -   - general: Общий ассистент, который может отвечать на широкий...
+2025-03-13 03:31:31,608 - multi_agent_system.orchestrator.register_agents - INFO -   - programming: Программный ассистент, специализирующийся на вопро...
+2025-03-13 03:31:31,608 - multi_agent_system.orchestrator.register_agents - INFO -   - science: Научный ассистент, специализирующийся на вопросах ...
+2025-03-13 03:31:31,608 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:31:31,691 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 03:31:31,692 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:31:45,717 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь test_user: Привет! Расскажи о себе кратко...
+2025-03-13 03:31:45,851 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя test_user
+2025-03-13 03:31:45,854 - telegram_bot.conversation_manager - WARNING - Невозможно преобразовать user_id 'test_user' в число. Используем как строку.
+2025-03-13 03:31:45,854 - api_server - INFO - Маршрутизация запроса пользователя test_user с использованием LangChain
+2025-03-13 03:31:45,855 - memory.buffer_test_user - INFO - Буферная память buffer_test_user инициализирована с максимальным размером 50
+2025-03-13 03:31:45,856 - memory.summary_test_user_buffer - INFO - Буферная память summary_test_user_buffer инициализирована с максимальным размером 10
+2025-03-13 03:31:45,856 - memory.summary_test_user - INFO - Суммаризирующая память summary_test_user инициализирована с размером буфера 10
+2025-03-13 03:31:45,856 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 03:31:46,018 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:31:46,022 - vector_store.long_term_test_user - INFO - Добавлено 1 векторов в коллекцию long_term_test_user
+2025-03-13 03:31:46,022 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 03:31:46,023 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 03:31:46,023 - mistral_client - INFO - Синхронная генерация текста с использованием async_utils
+2025-03-13 03:31:46,023 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 03:31:46,023 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 03:31:46,023 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 03:31:46,152 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:31:46,154 - vector_store.long_term_test_user - INFO - Добавлено 1 векторов в коллекцию long_term_test_user
+2025-03-13 03:31:46,155 - api_server - INFO - Запрос пользователя test_user обработан агентом general
+2025-03-13 03:31:46,156 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:175> exception=KeyError('role')>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 191, in generate_chat_response
+    prompt = self._convert_messages_to_prompt(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 213, in _convert_messages_to_prompt
+    if msg["role"] == "system":
+       ~~~^^^^^^^^
+KeyError: 'role'
+2025-03-13 03:34:13,502 - api_server - INFO - API-сервер оркестратора остановлен
+2025-03-13 03:34:30,973 - async_utils - INFO - nest_asyncio применен для поддержки вложенных циклов событий
+2025-03-13 03:34:32,049 - root - WARNING - LangGraph не установлен. Используйте команду: pip install langchain-experimental
+2025-03-13 03:34:33,035 - mistral_client - INFO - Инициализирован клиент Mistral API с базовым URL: http://139.59.241.176:8080
+2025-03-13 03:34:33,036 - telegram_bot.conversation_manager - INFO - Инициализирован менеджер диалогов
+2025-03-13 03:34:33,036 - multi_agent_system.orchestrator.langchain_router - INFO - Используется Mistral API по адресу: http://139.59.241.176:8080
+2025-03-13 03:34:33,037 - multi_agent_system.orchestrator.langchain_router - INFO - LangChainRouter инициализирован с менеджером памяти
+2025-03-13 03:34:33,046 - __main__ - INFO - Запуск API-сервера оркестратора на 0.0.0.0:8000...
+2025-03-13 03:34:33,069 - api_server - INFO - Найдены запущенные экземпляры сервера, они будут завершены
+2025-03-13 03:34:33,069 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: general
+2025-03-13 03:34:33,069 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: programming
+2025-03-13 03:34:33,069 - multi_agent_system.orchestrator.langchain_router - INFO - Зарегистрирован агент: science
+2025-03-13 03:34:33,069 - multi_agent_system.orchestrator.register_agents - INFO - Зарегистрировано агентов: 3
+2025-03-13 03:34:33,069 - multi_agent_system.orchestrator.register_agents - INFO -   - general: Общий ассистент, который может отвечать на широкий...
+2025-03-13 03:34:33,069 - multi_agent_system.orchestrator.register_agents - INFO -   - programming: Программный ассистент, специализирующийся на вопро...
+2025-03-13 03:34:33,070 - multi_agent_system.orchestrator.register_agents - INFO -   - science: Научный ассистент, специализирующийся на вопросах ...
+2025-03-13 03:34:33,070 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:34:33,137 - api_server - INFO - API-сервер оркестратора запущен
+2025-03-13 03:34:33,137 - api_server - INFO - LangChain маршрутизатор: 3 агентов зарегистрировано
+2025-03-13 03:53:15,078 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: шш...
+2025-03-13 03:53:15,233 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 03:53:15,234 - telegram_bot.conversation_manager - INFO - Создан новый разговор для пользователя 173818694
+2025-03-13 03:53:15,234 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 03:53:15,238 - memory.buffer_173818694 - INFO - Буферная память buffer_173818694 инициализирована с максимальным размером 50
+2025-03-13 03:53:15,239 - memory.summary_173818694_buffer - INFO - Буферная память summary_173818694_buffer инициализирована с максимальным размером 10
+2025-03-13 03:53:15,239 - memory.summary_173818694 - INFO - Суммаризирующая память summary_173818694 инициализирована с размером буфера 10
+2025-03-13 03:53:15,242 - memory_manager - WARNING - Удален файл блокировки Qdrant: data/memory/long_term/qdrant/.lock
+2025-03-13 03:53:15,458 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:53:15,474 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:53:15,475 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 03:53:15,475 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 03:53:15,475 - mistral_client - INFO - Синхронная генерация текста с использованием async_utils
+2025-03-13 03:53:15,476 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 03:53:15,476 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 03:53:15,477 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 03:53:15,610 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:53:15,612 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:53:15,613 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 03:53:15,614 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:175> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 191, in generate_chat_response
+    prompt = self._convert_messages_to_prompt(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 213, in _convert_messages_to_prompt
+    if msg["role"] == "system":
+       ~~~^^^^^^^^
+TypeError: 'UserMessage' object is not subscriptable
+2025-03-13 03:58:28,502 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: лодл...
+2025-03-13 03:58:28,783 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 03:58:29,100 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:58:29,133 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:58:29,135 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 03:58:29,135 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 03:58:29,136 - mistral_client - INFO - Синхронная генерация текста с использованием async_utils
+2025-03-13 03:58:29,137 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 03:58:29,137 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 03:58:29,139 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 03:58:29,412 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 03:58:29,415 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 03:58:29,416 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 03:58:29,418 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:175> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 191, in generate_chat_response
+    prompt = self._convert_messages_to_prompt(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 213, in _convert_messages_to_prompt
+    if msg["role"] == "system":
+       ~~~^^^^^^^^
+TypeError: 'UserMessage' object is not subscriptable
+2025-03-13 04:04:52,501 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: Ниши...
+2025-03-13 04:04:52,654 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 04:04:52,819 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 04:04:52,847 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 04:04:52,848 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 04:04:52,849 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 04:04:52,850 - mistral_client - INFO - Синхронная генерация текста с использованием async_utils
+2025-03-13 04:04:52,850 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 04:04:52,850 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 04:04:52,851 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 04:04:52,977 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 04:04:52,979 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 04:04:52,982 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 04:04:52,987 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:175> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 191, in generate_chat_response
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 213, in _convert_messages_to_prompt
+TypeError: 'UserMessage' object is not subscriptable
+2025-03-13 04:19:28,755 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: дл...
+2025-03-13 04:19:28,926 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 04:19:29,086 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 04:19:29,109 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 04:19:29,111 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 04:19:29,112 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 04:19:29,112 - mistral_client - INFO - Синхронная генерация текста с использованием async_utils
+2025-03-13 04:19:29,113 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 04:19:29,113 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 04:19:29,114 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 04:19:29,449 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 04:19:29,452 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 04:19:29,455 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 04:19:29,457 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:175> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 191, in generate_chat_response
+    formatted_prompt = f"{system_prompt}\n\n"
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 213, in _convert_messages_to_prompt
+TypeError: 'UserMessage' object is not subscriptable
+2025-03-13 04:58:45,964 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: asdf...
+2025-03-13 04:58:46,115 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 04:58:46,271 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 04:58:46,303 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 04:58:46,305 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 04:58:46,305 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 04:58:46,307 - mistral_client - INFO - Синхронная генерация текста с использованием async_utils
+2025-03-13 04:58:46,307 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 04:58:46,308 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 04:58:46,308 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 04:58:46,310 - memory.summary_173818694 - WARNING - Summarizer не задан, резюме не будет обновлено
+2025-03-13 04:58:46,440 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 04:58:46,443 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 04:58:46,448 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 04:58:46,452 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:175> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 191, in generate_chat_response
+    formatted_prompt = f"{system_prompt}\n\n"
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 213, in _convert_messages_to_prompt
+TypeError: 'UserMessage' object is not subscriptable
+2025-03-13 04:59:58,055 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: ыф...
+2025-03-13 04:59:58,199 - telegram_bot.conversation_manager - INFO - История сообщений для пользователя 173818694 обрезана до 10
+2025-03-13 04:59:58,200 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 04:59:58,202 - memory.summary_173818694 - WARNING - Summarizer не задан, резюме не будет обновлено
+2025-03-13 04:59:58,347 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 04:59:58,362 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 04:59:58,362 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 04:59:58,362 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 04:59:58,363 - mistral_client - INFO - Синхронная генерация текста с использованием async_utils
+2025-03-13 04:59:58,364 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 04:59:58,364 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 04:59:58,364 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 04:59:58,365 - memory.summary_173818694 - WARNING - Summarizer не задан, резюме не будет обновлено
+2025-03-13 04:59:58,501 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 04:59:58,503 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 04:59:58,505 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 04:59:58,505 - telegram_bot.conversation_manager - INFO - История сообщений для пользователя 173818694 обрезана до 10
+2025-03-13 04:59:58,507 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-33' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:175> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 191, in generate_chat_response
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 213, in _convert_messages_to_prompt
+    if user_messages:
+           ^^^^^^^^^^^
+TypeError: 'UserMessage' object is not subscriptable
+2025-03-13 05:03:51,201 - api_server - INFO - Получено сообщение от телеграм-бота, пользователь 173818694: авп...
+2025-03-13 05:03:51,355 - telegram_bot.conversation_manager - INFO - История сообщений для пользователя 173818694 обрезана до 10
+2025-03-13 05:03:51,355 - api_server - INFO - Маршрутизация запроса пользователя 173818694 с использованием LangChain
+2025-03-13 05:03:51,355 - memory.summary_173818694 - WARNING - Summarizer не задан, резюме не будет обновлено
+2025-03-13 05:03:51,500 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 05:03:51,514 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 05:03:51,514 - multi_agent_system.orchestrator.langchain_router - WARNING - Прямой вызов Mistral API не реализован, выбран первый агент: general
+2025-03-13 05:03:51,514 - multi_agent_system.orchestrator.langchain_router - INFO - Запрос маршрутизирован к агенту: general
+2025-03-13 05:03:51,515 - mistral_client - INFO - Синхронная генерация текста с использованием async_utils
+2025-03-13 05:03:51,515 - mistral_client - WARNING - RuntimeError в generate_text: this event loop is already running.
+2025-03-13 05:03:51,515 - mistral_client - INFO - Создаем новый цикл событий
+2025-03-13 05:03:51,515 - mistral_client - ERROR - Вложенная ошибка при создании нового цикла: Cannot run the event loop while another loop is running
+2025-03-13 05:03:51,515 - memory.summary_173818694 - WARNING - Summarizer не задан, резюме не будет обновлено
+2025-03-13 05:03:51,677 - embedding_provider.mistral-embed - ERROR - Ошибка при получении эмбеддинга: 400 Client Error: Bad Request for url: http://139.59.241.176:8080/embeddings
+2025-03-13 05:03:51,680 - vector_store.long_term_173818694 - INFO - Добавлено 1 векторов в коллекцию long_term_173818694
+2025-03-13 05:03:51,682 - api_server - INFO - Запрос пользователя 173818694 обработан агентом general
+2025-03-13 05:03:51,682 - telegram_bot.conversation_manager - INFO - История сообщений для пользователя 173818694 обрезана до 10
+2025-03-13 05:03:51,683 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-38' coro=<MistralClient.generate_chat_response() done, defined at /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py:175> exception=TypeError("'UserMessage' object is not subscriptable")>
+Traceback (most recent call last):
+  File "/Users/dimitrizolot/.pyenv/versions/3.11.11/lib/python3.11/asyncio/tasks.py", line 277, in __step
+    result = coro.send(None)
+             ^^^^^^^^^^^^^^^
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 191, in generate_chat_response
+  File "/Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/telegram_bot/mistral_client.py", line 213, in _convert_messages_to_prompt
+TypeError: 'UserMessage' object is not subscriptable

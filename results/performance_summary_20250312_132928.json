@@ -1,0 +1,27 @@
+{
+  "timestamp": "20250312_132928",
+  "total_tests": 2,
+  "successful_tests": 2,
+  "failed_tests": 0,
+  "total_execution_time": 11.915369987487793,
+  "results": [
+    {
+      "test_name": "test_memory_performance.py",
+      "status": "\u0423\u0421\u041f\u0415\u0428\u041d\u041e",
+      "success": true,
+      "execution_time": 0.7980151176452637,
+      "stdout": "============================= test session starts ==============================\nplatform darwin -- Python 3.11.11, pytest-7.4.3, pluggy-1.5.0 -- /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/venv/bin/python\ncachedir: .pytest_cache\nrootdir: /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system\nplugins: anyio-3.7.1, langsmith-0.3.13\ncollecting ... collected 4 items\n\ntests/performance/memory_system/test_memory_performance.py::TestMemoryPerformance::test_buffer_memory_add_performance PASSED [ 25%]\ntests/performance/memory_system/test_memory_performance.py::TestMemoryPerformance::test_summary_memory_summarization_performance PASSED [ 50%]\ntests/performance/memory_system/test_memory_performance.py::TestMemoryPerformance::test_memory_manager_context_retrieval_performance PASSED [ 75%]\ntests/performance/memory_system/test_memory_performance.py::TestMemoryPerformance::test_memory_persistence_performance PASSED [100%]\n\n============================== 4 passed in 0.04s ===============================\n",
+      "stderr": "",
+      "return_code": 0
+    },
+    {
+      "test_name": "test_memory_agent_performance.py",
+      "status": "\u0423\u0421\u041f\u0415\u0428\u041d\u041e",
+      "success": true,
+      "execution_time": 11.11735486984253,
+      "stdout": "============================= test session starts ==============================\nplatform darwin -- Python 3.11.11, pytest-7.4.3, pluggy-1.5.0 -- /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system/venv/bin/python\ncachedir: .pytest_cache\nrootdir: /Users/dimitrizolot/Desktop/Co-Founder/mistral-multi-agent-system\nplugins: anyio-3.7.1, langsmith-0.3.13\ncollecting ... collected 2 items\n\ntests/performance/memory_system/benchmarks/test_memory_agent_performance.py::TestMemoryAgentPerformance::test_memory_agent_conversation_performance PASSED [ 50%]\ntests/performance/memory_system/benchmarks/test_memory_agent_performance.py::TestMemoryAgentPerformance::test_memory_agent_scaling_performance PASSED [100%]\n\n============================== 2 passed in 10.42s ==============================\n",
+      "stderr": "",
+      "return_code": 0
+    }
+  ]
+}
