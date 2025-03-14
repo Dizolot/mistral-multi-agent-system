@@ -98,7 +98,7 @@ class TestModelAdapter(unittest.TestCase):
         """Тест адаптера для Mistral API"""
         # Создаем адаптер с мок-клиентом
         adapter = MistralAdapter(
-            base_url="http://139.59.241.176:8000",
+            base_url="http://139.59.241.176:8080",
             model_name="mistral-small",
             timeout=10,
             api_key=""  # API ключ не требуется для локальной модели
@@ -133,7 +133,7 @@ class TestModelAdapter(unittest.TestCase):
         
         # Создаем адаптер
         adapter = MistralAdapter(
-            base_url="http://139.59.241.176:8000",
+            base_url="http://139.59.241.176:8080",
             model_name="mistral-small",
             timeout=10
         )

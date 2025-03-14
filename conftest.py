@@ -9,7 +9,7 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 @pytest.fixture(scope="session", autouse=True)
 def set_mistral_server_url():
     """Устанавливает переменную окружения MISTRAL_SERVER_URL для тестов."""
-    os.environ["MISTRAL_SERVER_URL"] = "http://139.59.241.176:8000"
+    os.environ["MISTRAL_SERVER_URL"] = "http://139.59.241.176:8080"
     yield
     # Очистка после тестов (опционально)
     if "MISTRAL_SERVER_URL" in os.environ:

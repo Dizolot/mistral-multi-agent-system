@@ -39,7 +39,7 @@ def main():
     
     # Создаем провайдер эмбеддингов
     embedding_provider = LocalMistralEmbeddingProvider(
-        server_url="http://139.59.241.176:8000"
+        server_url="http://139.59.241.176:8080"
     )
     
     # Создаем менеджер памяти с простым суммаризатором

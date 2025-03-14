@@ -19,7 +19,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Конфигурация
-MISTRAL_API_URL = os.getenv('MISTRAL_API_URL', 'http://139.59.241.176:8000')
+MISTRAL_API_URL = os.getenv('MISTRAL_API_URL', 'http://139.59.241.176:8080')
 CHECK_INTERVAL = int(os.getenv('CHECK_INTERVAL', '60'))  # интервал проверки в секундах
 HEALTH_CHECK_ENDPOINT = '/health'
 
