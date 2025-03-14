@@ -128,4 +128,11 @@ tmp/
 .env.test
 .env.production
 secrets.json
-credentials.json 
+credentials.json
+
+# Logs and databases
+*.log
+*.sqlite3
+*.db
+logs/*
+!logs/.gitkeep 
