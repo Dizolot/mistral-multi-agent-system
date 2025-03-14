@@ -21,6 +21,7 @@ from src.core.memory_system.long_term_memory import LongTermMemory
 from src.core.memory_system.vector_store import VectorStore
 from src.core.memory_system.qdrant_vector_store import QdrantVectorStore
 from src.core.memory_system.embedding_provider import EmbeddingProvider, MistralEmbeddingProvider
+from src.agents.improvement_tracker import ImprovementTracker
 
 
 class MemoryManager:
@@ -73,6 +74,9 @@ class MemoryManager:
         
         # Инициализация фабрики векторных хранилищ
         self.vector_store_factory = vector_store_factory
+        
+        # Инициализация трекера улучшений
+        self.improvement_tracker = ImprovementTracker(os.path.join(storage_dir, "improvements"))
     
     def get_buffer_memory(self, user_id: str) -> BufferMemory:
         """
@@ -581,4 +585,158 @@ class MemoryManager:
             "relevant_messages": [message for message, score in relevant_messages],
             "relevant_scores": [score for message, score in relevant_messages],
             "summary": summary
-        } 
+        }
+    
+    async def add_analysis_result(self, code: str, analysis_result: Any, user_id: str = "default", language: str = "python") -> str:
+        """
+        Добавляет результат анализа кода в трекер улучшений.
+        
+        Args:
+            code: Исходный код
+            analysis_result: Результат анализа
+            user_id: Идентификатор пользователя
+            language: Язык программирования
+            
+        Returns:
+            str: Идентификатор версии кода
+        """
+        try:
+            # Отслеживаем новую версию кода
+            version_id = await self.improvement_tracker.track_code(code, user_id, language)
+            
+            # Сохраняем информацию о версии в долгосрочной памяти
+            memory = self.get_long_term_memory(user_id)
+            memory.add_message(SystemMessage(
+                content=f"Сохранена версия кода {version_id} на языке {language}",
+                metadata={
+                    "type": "code_version",
+                    "version_id": version_id,
+                    "language": language,
+                    "timestamp": datetime.now().isoformat()
+                }
+            ))
+            
+            return version_id
+        except Exception as e:
+            self.logger.error(f"Ошибка при добавлении результата анализа кода: {e}")
+            raise
+
+    async def add_improvements(self, code: str, improvements: List[Dict[str, Any]], user_id: str = "default", version_id: Optional[str] = None) -> List[str]:
+        """
+        Добавляет предложения по улучшению кода в трекер улучшений.
+        
+        Args:
+            code: Исходный код
+            improvements: Список предложений по улучшению
+            user_id: Идентификатор пользователя
+            version_id: Идентификатор версии кода (если известен)
+            
+        Returns:
+            List[str]: Список идентификаторов предложений
+        """
+        try:
+            # Если идентификатор версии не указан, отслеживаем новую версию
+            if not version_id:
+                version_id = await self.improvement_tracker.track_code(code, user_id)
+            
+            # Добавляем предложения по улучшению
+            suggestion_ids = await self.improvement_tracker.add_improvement_suggestions(version_id, improvements)
+            
+            # Сохраняем информацию о предложениях в долгосрочной памяти
+            memory = self.get_long_term_memory(user_id)
+            memory.add_message(SystemMessage(
+                content=f"Добавлены предложения по улучшению кода для версии {version_id}: {len(suggestion_ids)} предложений",
+                metadata={
+                    "type": "improvement_suggestions",
+                    "version_id": version_id,
+                    "suggestion_ids": suggestion_ids,
+                    "timestamp": datetime.now().isoformat()
+                }
+            ))
+            
+            return suggestion_ids
+        except Exception as e:
+            self.logger.error(f"Ошибка при добавлении предложений по улучшению кода: {e}")
+            raise
+
+    async def add_improved_code(self, original_code: str, improved_code: str, user_id: str = "default", 
+                               original_version_id: Optional[str] = None, applied_suggestions: Optional[List[str]] = None) -> str:
+        """
+        Сохраняет улучшенный код в трекер улучшений.
+        
+        Args:
+            original_code: Исходный код
+            improved_code: Улучшенный код
+            user_id: Идентификатор пользователя
+            original_version_id: Идентификатор исходной версии кода (если известен)
+            applied_suggestions: Список примененных предложений по улучшению
+            
+        Returns:
+            str: Идентификатор результата улучшения
+        """
+        try:
+            # Если идентификатор исходной версии не указан, отслеживаем новую версию
+            if not original_version_id:
+                original_version_id = await self.improvement_tracker.track_code(original_code, user_id)
+            
+            # Записываем результат улучшения
+            result_id = await self.improvement_tracker.record_improvement_result(
+                original_version_id,
+                improved_code,
+                applied_suggestions
+            )
+            
+            # Сохраняем информацию о результате в долгосрочной памяти
+            memory = self.get_long_term_memory(user_id)
+            
+            # Получаем оценку эффективности улучшений
+            effectiveness = self.improvement_tracker.get_improvement_effectiveness(result_id)
+            
+            memory.add_message(SystemMessage(
+                content=f"Применены улучшения кода для версии {original_version_id}. Эффективность: {effectiveness['score']:.2f}%",
+                metadata={
+                    "type": "improvement_result",
+                    "original_version_id": original_version_id,
+                    "result_id": result_id,
+                    "effectiveness": effectiveness,
+                    "timestamp": datetime.now().isoformat()
+                }
+            ))
+            
+            return result_id
+        except Exception as e:
+            self.logger.error(f"Ошибка при сохранении улучшенного кода: {e}")
+            raise
+            
+    def get_improvement_history(self, user_id: str) -> List[Dict[str, Any]]:
+        """
+        Получает историю улучшений кода для указанного пользователя.
+        
+        Args:
+            user_id: Идентификатор пользователя
+            
+        Returns:
+            List[Dict[str, Any]]: История улучшений
+        """
+        try:
+            return self.improvement_tracker.get_improvement_history(user_id)
+        except Exception as e:
+            self.logger.error(f"Ошибка при получении истории улучшений кода: {e}")
+            return []
+
+    def get_code_diff(self, original_id: str, improved_id: str) -> List[str]:
+        """
+        Получает разницу между двумя версиями кода.
+        
+        Args:
+            original_id: Идентификатор исходной версии
+            improved_id: Идентификатор улучшенной версии
+            
+        Returns:
+            List[str]: Список строк разницы в формате unidiff
+        """
+        try:
+            return self.improvement_tracker.get_code_diff(original_id, improved_id)
+        except Exception as e:
+            self.logger.error(f"Ошибка при получении разницы между версиями кода: {e}")
+            return [] 
