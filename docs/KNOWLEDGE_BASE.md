@@ -1011,6 +1011,7 @@ response = await mistral_client.generate_response(
 - `ModelService`: основной класс, предоставляющий унифицированный API
 - `ModelAdapter`: абстрактный класс, определяющий интерфейс для всех адаптеров
 - `MistralAdapter`: конкретная реализация адаптера для Mistral API
+- `GemmaAdapter` (планируемый): конкретная реализация адаптера для Gemma 3 API
 - `LoadBalancer`: компонент для балансировки нагрузки между экземплярами моделей
 - `ResponseCache`: система кэширования ответов моделей
 - `MetricsCollector`: компонент для сбора метрик производительности
@@ -1364,3 +1365,245 @@ history = tracker.get_improvement_history(user_id="user123")
 3. **Оптимизация производительности**
    - Оптимизировать работу с векторным хранилищем для больших объемов кода
    - Реализовать кэширование результатов анализа для повторяющихся запросов
+
+## Компоненты системы
+
+### ModelService
+
+#### Общее описание
+
+ModelService представляет собой унифицированный сервис для взаимодействия с различными языковыми моделями через единый интерфейс. Он абстрагирует детали работы с конкретными API моделей и предоставляет высокоуровневые методы для генерации текста и обработки диалогов.
+
+#### Ключевые компоненты
+
+1. **Адаптеры моделей**:
+   - `MistralAdapter`: Адаптер для работы с Mistral API
+   - `GemmaAdapter` (планируемый): Адаптер для работы с Gemma 3 API
+
+2. **Система кэширования**:
+   - Кэширование запросов для экономии ресурсов и ускорения ответов
+   - Настраиваемые параметры TTL и размера кэша
+
+3. **SessionManager**:
+   - Управление пользовательскими сессиями
+   - Сохранение и восстановление контекста диалогов
+   - Автоматическая очистка устаревших сессий
+   - Персистентное хранение сессий на диске
+
+4. **RequestQueue**:
+   - Асинхронная обработка запросов к языковым моделям
+   - Приоритизация запросов (критические, высокие, нормальные, низкие)
+   - Ограничение максимального количества одновременных запросов
+   - Сбор статистики по обработке запросов
+
+#### Основные методы
+
+- `generate(prompt, model, use_cache, **params)`: Генерация текста на основе промпта
+- `chat(messages, model, use_cache, **params)`: Обработка запроса в формате чата
+- `chat_with_session(message, session_id, model, use_cache, **params)`: Обработка запроса с сохранением контекста сессии
+- `generate_async()`, `chat_async()`, `chat_with_session_async()`: Асинхронные версии методов с поддержкой приоритизации
+
+#### Примеры использования
+
+```python
+# Инициализация сервиса
+model_service = ModelService(
+    default_model="mistral-medium",
+    cache_ttl=3600,
+    session_ttl=86400,
+    max_sessions=1000,
+    sessions_storage_path="/path/to/sessions",
+    max_workers=4,
+    max_queue_size=100,
+    request_timeout=30
+)
+
+# Запуск сервиса
+await model_service.start()
+
+# Генерация текста
+result = model_service.generate(
+    prompt="Расскажи о квантовой физике",
+    model="mistral-large",
+    use_cache=True,
+    max_tokens=500
+)
+
+# Обработка запроса в формате чата
+messages = [
+    {"role": "user", "content": "Привет, как дела?"}
+]
+result = model_service.chat(
+    messages=messages,
+    model="mistral-medium",
+    use_cache=True
+)
+
+# Обработка запроса с сохранением контекста сессии
+message = {"role": "user", "content": "Привет, как дела?"}
+result = model_service.chat_with_session(
+    message=message,
+    session_id="user123",
+    model="mistral-medium",
+    use_cache=True,
+    max_history_length=10
+)
+
+# Асинхронная обработка запроса с приоритетом
+result = await model_service.chat_with_session_async(
+    message={"role": "user", "content": "Срочный вопрос!"},
+    session_id="user123",
+    priority=RequestPriority.HIGH,
+    timeout=10
+)
+
+# Остановка сервиса
+await model_service.stop()
+```
+
+### SessionManager
+
+#### Общее описание
+
+SessionManager отвечает за управление пользовательскими сессиями, сохранение и восстановление контекста диалогов между запросами. Он обеспечивает эффективное использование памяти, автоматически очищая устаревшие сессии и сохраняя активные сессии на диск.
+
+#### Ключевые компоненты
+
+1. **Session**:
+   - Класс для хранения информации о сессии пользователя
+   - Содержит историю сообщений, метаданные и саммари диалога
+   - Поддерживает ограничение максимальной длины истории
+
+2. **SessionManager**:
+   - Управляет коллекцией сессий
+   - Обеспечивает создание, получение и удаление сессий
+   - Выполняет периодическую очистку устаревших сессий
+   - Сохраняет и загружает сессии с диска
+
+#### Основные методы
+
+- `create_session(session_id, model, max_history_length, metadata)`: Создание новой сессии
+- `get_session(session_id)`: Получение существующей сессии
+- `add_message(session_id, message)`: Добавление сообщения в сессию
+- `delete_session(session_id)`: Удаление сессии
+- `cleanup_expired_sessions()`: Очистка устаревших сессий
+- `save_sessions()`: Сохранение сессий на диск
+- `load_sessions()`: Загрузка сессий с диска
+
+#### Примеры использования
+
+```python
+# Инициализация менеджера сессий
+session_manager = SessionManager(
+    session_ttl=86400,  # 24 часа
+    max_sessions=1000,
+    storage_path="/path/to/sessions"
+)
+
+# Создание новой сессии
+session = session_manager.create_session(
+    session_id="user123",
+    model="mistral-medium",
+    max_history_length=10,
+    metadata={"user_id": "user123", "channel": "telegram"}
+)
+
+# Добавление сообщения в сессию
+session_manager.add_message(
+    session_id="user123",
+    message={"role": "user", "content": "Привет, как дела?"}
+)
+
+# Получение сессии
+session = session_manager.get_session("user123")
+if session:
+    context_messages = session.get_context_messages(include_summary=True)
+    print(f"История сообщений: {context_messages}")
+
+# Очистка устаревших сессий
+session_manager.cleanup_expired_sessions()
+
+# Сохранение сессий на диск
+await session_manager.save_sessions()
+
+# Загрузка сессий с диска
+await session_manager.load_sessions()
+
+# Удаление сессии
+session_manager.delete_session("user123")
+```
+
+### RequestQueue
+
+#### Общее описание
+
+RequestQueue обеспечивает асинхронную обработку запросов к языковым моделям с поддержкой приоритизации. Он позволяет эффективно управлять нагрузкой на систему, обрабатывая критические запросы в первую очередь и ограничивая максимальное количество одновременных запросов.
+
+#### Ключевые компоненты
+
+1. **RequestPriority**:
+   - Перечисление для определения приоритета запроса
+   - Значения: CRITICAL, HIGH, NORMAL, LOW
+
+2. **QueueItem**:
+   - Класс для хранения информации о запросе в очереди
+   - Содержит приоритет, время создания, идентификатор запроса и задачу
+
+3. **RequestQueue**:
+   - Управляет очередью запросов
+   - Обеспечивает приоритизацию запросов
+   - Ограничивает максимальное количество одновременных запросов
+   - Собирает статистику по обработке запросов
+
+#### Основные методы
+
+- `start()`: Запуск очереди запросов
+- `stop()`: Остановка очереди запросов
+- `enqueue(task, *args, priority, request_id, timeout, **kwargs)`: Добавление запроса в очередь
+
+#### Примеры использования
+
+```python
+# Инициализация очереди запросов
+request_queue = RequestQueue(
+    max_workers=4,
+    max_queue_size=100,
+    request_timeout=30
+)
+
+# Запуск очереди
+await request_queue.start()
+
+# Определение асинхронной функции для обработки
+async def process_request(text):
+    # Обработка запроса
+    return f"Processed: {text}"
+
+# Добавление запроса в очередь с высоким приоритетом
+future = await request_queue.enqueue(
+    process_request,
+    "Важный запрос",
+    priority=RequestPriority.HIGH,
+    request_id="request123",
+    timeout=10
+)
+
+# Ожидание результата
+result = await future
+print(f"Результат: {result}")
+
+# Добавление запроса в очередь с нормальным приоритетом
+future = await request_queue.enqueue(
+    process_request,
+    "Обычный запрос",
+    priority=RequestPriority.NORMAL,
+    request_id="request456"
+)
+
+# Ожидание результата
+result = await future
+print(f"Результат: {result}")
+
+# Остановка очереди
+await request_queue.stop()
+```
