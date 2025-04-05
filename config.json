@@ -1,0 +1,75 @@
+{
+  "telegram": {
+    "token": "7835434491:AAEFMJLLKuSJzPkwKsDtcJ7q5BjzgsqNiQw",
+    "admin_chat_id": "173818694",
+    "channel_id": "${CHANNEL_ID}",
+    "authorized_users": [],
+    "bot_token": "7835434491:AAEFMJLLKuSJzPkwKsDtcJ7q5BjzgsqNiQw",
+    "chat_id": "173818694"
+  },
+  "telegram_bot": {
+    "telegram_token": "7835434491:AAEFMJLLKuSJzPkwKsDtcJ7q5BjzgsqNiQw",
+    "admin_chat_id": "173818694",
+    "reporting_interval": 3600,
+    "api_url": "http://localhost:8080"
+  },
+  "improvement_settings": {
+    "target_agent": "secretary_agent",
+    "target_directory": "src/agents",
+    "file_extensions": [".py"],
+    "exclude_patterns": ["__pycache__", "*.pyc", "*.pyo"],
+    "cycle_interval": 3600,
+    "max_files_per_cycle": 5,
+    "improvement_strategies": ["code_quality", "documentation", "performance", "security"]
+  },
+  "reporting": {
+    "notify_on_start": true,
+    "notify_on_completion": true,
+    "include_metrics": true,
+    "include_diff": true,
+    "include_charts": true
+  },
+  "metrics": {
+    "code_quality": {
+      "enabled": true,
+      "weight": 0.4
+    },
+    "test_coverage": {
+      "enabled": true,
+      "weight": 0.3
+    },
+    "performance": {
+      "enabled": true,
+      "weight": 0.3
+    }
+  },
+  "security": {
+    "authorized_users": [],
+    "approval_required": true,
+    "max_changes_without_approval": 10,
+    "allowed_directories": ["src/agents", "tests/agents"]
+  },
+  "model": {
+    "url": "http://139.59.241.176:8080",
+    "model": "mistral",
+    "temperature": 0.7,
+    "max_tokens": 2048
+  },
+  "system": {
+    "api_check_interval": 60,
+    "max_retries": 3,
+    "retry_delay": 5,
+    "log_level": "INFO",
+    "auto_restart": true,
+    "recovery_timeout": 300
+  },
+  "code_analysis": {
+    "secretary_path": "src/agents/secretary_agent.py",
+    "interval": 3600,
+    "metrics": {
+      "complexity_threshold": 10,
+      "test_coverage_threshold": 80,
+      "code_smells_threshold": 5
+    }
+  }
+} 
